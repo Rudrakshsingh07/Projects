@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en"><script src="./script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with W</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with W</h1></center>
+    <dl class="disease-list">
+      <dt><b>1. Wilson's Disease</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Fatigue, jaundice, abdominal pain,
+        neurological symptoms (tremor, difficulty walking), psychiatric symptoms
+        (depression, anxiety).
+        <br />
+        <strong>Definition:</strong> Wilson's disease is a rare inherited
+        disorder that causes copper to accumulate in the liver, brain, and other
+        vital organs, leading to various symptoms.
+      </dd>
+
+      <dt><b>2. Whooping Cough (Pertussis)</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Severe coughing fits, followed by a
+        high-pitched intake of breath that sounds like a "whoop," vomiting after
+        coughing fits, exhaustion.
+        <br />
+        <strong>Definition:</strong> Pertussis, also known as whooping cough, is
+        a highly contagious bacterial infection of the respiratory tract,
+        characterized by severe coughing fits.
+      </dd>
+
+      <dt><b>3. Wegener's Granulomatosis</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Sinusitis, nosebleeds, cough, shortness of
+        breath, joint pain, skin lesions, eye redness, fever, fatigue.
+        <br />
+        <strong>Definition:</strong> Wegener's granulomatosis is a rare disorder
+        that causes inflammation of blood vessels in the nose, sinuses, throat,
+        lungs, and kidneys.
+      </dd>
+
+      <dt><b>4. West Nile Virus</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Fever, headache, body aches, joint pains,
+        vomiting, diarrhea, rash, fatigue, weakness, swollen lymph nodes, stiff
+        neck, disorientation, tremors, seizures, paralysis.
+        <br />
+        <strong>Definition:</strong> West Nile virus is a mosquito-borne
+        infection that can cause severe neurological symptoms and, in rare
+        cases, death.
+      </dd>
+
+      <dt><b>5. Waldenström's Macroglobulinemia</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Weakness, fatigue, weight loss, easy
+        bruising, nosebleeds, blurred vision, headaches, dizziness, swollen
+        lymph nodes, enlarged spleen, neurological symptoms.
+        <br />
+        <strong>Definition:</strong> Waldenström's macroglobulinemia is a rare
+        type of blood cancer that affects white blood cells called lymphocytes,
+        leading to overproduction of a specific type of protein.
+      </dd>
+
+      <dt><b>6. West Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Infantile spasms (jerking of the arms and
+        legs), developmental delays, intellectual disability, behavioral
+        problems, seizures.
+        <br />
+        <strong>Definition:</strong> West syndrome, also known as infantile
+        spasms, is a rare type of epilepsy that typically begins in infancy and
+        is characterized by a specific type of seizure called infantile spasms.
+      </dd>
+
+      <dt><b>7. Wiskott-Aldrich Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Frequent infections, easy bruising, abnormal
+        bleeding, eczema, autoimmune disorders, increased risk of cancer.
+        <br />
+        <strong>Definition:</strong> Wiskott-Aldrich syndrome is a rare
+        inherited disorder characterized by a weakened immune system and a
+        reduced ability to form blood clots.
+      </dd>
+
+      <dt><b>8. Whipple's Disease</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Abdominal pain, diarrhea, weight loss,
+        malabsorption, joint pain, fever, fatigue, anemia, neurological
+        symptoms.
+        <br />
+        <strong>Definition:</strong> Whipple's disease is a rare bacterial
+        infection that primarily affects the small intestine, leading to
+        malabsorption and a range of other symptoms.
+      </dd>
+
+      <dt><b>9. Wilms Tumor</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Abdominal swelling or mass, abdominal pain,
+        blood in the urine, fever, hypertension, weight loss, poor appetite.
+        <br />
+        <strong>Definition:</strong> Wilms tumor, also known as nephroblastoma,
+        is a type of kidney cancer that primarily affects children.
+      </dd>
+
+      <dt><b>10. Wernicke-Korsakoff Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Confusion, memory loss, coordination
+        problems, vision changes, hallucinations, mental health issues.
+        <br />
+        <strong>Definition:</strong> Wernicke-Korsakoff syndrome is a
+        neurological disorder caused by severe deficiency of thiamine (vitamin
+        B1), often due to chronic alcoholism.
+      </dd>
+
+      <dt><b>11. Windburn</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Red, irritated skin; burning sensation;
+        dryness; peeling; itching.
+        <br />
+        <strong>Definition:</strong> Windburn is a condition caused by exposure
+        to cold, windy conditions, resulting in irritation and redness of the
+        skin.
+      </dd>
+
+      <dt><b>12. Whiplash</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Neck pain, stiffness, headaches, dizziness,
+        shoulder pain, back pain, tingling or numbness in the arms.
+        <br />
+        <strong>Definition:</strong> Whiplash is a neck injury caused by a
+        sudden jerking motion of the head, typically occurring in motor vehicle
+        accidents.
+      </dd>
+
+      <dt><b>13. Wilson-Mikity Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Hypotonia (low muscle tone), seizures,
+        respiratory problems, feeding difficulties, developmental delays.
+        <br />
+        <strong>Definition:</strong> Wilson-Mikity syndrome is a rare
+        neurological disorder that affects newborns, characterized by seizures
+        and developmental delays.
+      </dd>
+
+      <dt><b>14. Westphal's Disease</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Muscle stiffness, rigidity, tremors,
+        difficulty with movement, speech problems.
+        <br />
+        <strong>Definition:</strong> Westphal's disease, also known as
+        Huntington's disease, is a hereditary neurological disorder that causes
+        degeneration of brain cells, leading to movement, cognitive, and
+        psychiatric symptoms.
+      </dd>
+
+      <dt><b>15. Wallenberg Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Difficulty swallowing, hoarseness, dizziness,
+        nausea, vomiting, balance problems, facial numbness or pain, difficulty
+        speaking, drooping eyelid, double vision.
+        <br />
+        <strong>Definition:</strong> Wallenberg syndrome, also known as lateral
+        medullary syndrome, is a neurological condition caused by damage to the
+        lateral part of the medulla oblongata in the brainstem.
+      </dd>
+
+      <dt><b>16. Waterhouse-Friderichsen Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Sudden fever, vomiting, diarrhea, fatigue,
+        headache, muscle aches, rash, bleeding under the skin, low blood
+        pressure, shock.
+        <br />
+        <strong>Definition:</strong> Waterhouse-Friderichsen syndrome is a rare
+        but potentially life-threatening condition characterized by bleeding
+        into the skin and adrenal gland failure, often caused by severe
+        bacterial infections such as meningococcemia.
+      </dd>
+
+      <dt><b>17. Waldmann Disease</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Severe diarrhea, weight loss, malnutrition,
+        weakness, fatigue, abdominal pain, bloating.
+        <br />
+        <strong>Definition:</strong> Waldmann disease, also known as primary
+        intestinal lymphangiectasia, is a rare disorder characterized by
+        abnormal dilation of lymph vessels in the small intestine, leading to
+        protein-losing enteropathy and malabsorption.
+      </dd>
+
+      <dt><b>18. Wiskott-Aldrich Syndrome Protein</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Recurrent infections, eczema, abnormal
+        bleeding, autoimmune disorders.
+        <br />
+        <strong>Definition:</strong> Wiskott-Aldrich syndrome protein (WASP) is
+        a protein that plays a crucial role in the function of certain immune
+        cells. Mutations in the gene encoding WASP lead to Wiskott-Aldrich
+        syndrome, a rare immune disorder.
+      </dd>
+
+      <dt><b>19. Werner Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Premature aging, gray hair, thinning and
+        graying of scalp hair, wrinkled skin, cataracts, diabetes, osteoporosis,
+        cancer predisposition.
+        <br />
+        <strong>Definition:</strong> Werner syndrome is a rare genetic disorder
+        characterized by premature aging and an increased risk of age-related
+        diseases such as cancer and heart disease.
+      </dd>
+
+      <dt><b>20. White Piedra</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> White or light-colored nodules or masses on
+        hair shafts, brittle hair, itching, hair breakage.
+        <br />
+        <strong>Definition:</strong> White piedra is a fungal infection of the
+        hair shafts caused by certain species of fungi, leading to the formation
+        of white or light-colored nodules on the hair.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

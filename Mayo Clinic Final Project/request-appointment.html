@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mayo Clinic Rochester Appointment Registration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+      }
+      form {
+        max-width: 500px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      nav {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav li {
+        margin: 0 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: #137ade;
+      }
+      .logo {
+        height: 55px;
+        width: 65px;
+      }
+      .donation-prompt-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 227px;
+        background-color: #0d0d33;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .donation-prompt-table {
+        border-spacing: 15px;
+      }
+      .donation-prompt-text {
+        font-size: 40px;
+        color: #fff;
+      }
+      .donation-prompt-subtext {
+        font-size: 19px;
+        color: #fff;
+      }
+      .donate-button {
+        border: 2px solid #1371d5;
+        border-radius: 20px;
+        background-color: #1371d5;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        width: 200px;
+        height: 46px;
+        font-size: 20px;
+      }
+      .donate-button:hover {
+        background-color: #0f61a8;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html">
+              <img
+                id="logo"
+                class="logo"
+                src="./Assets/mayo-clinic-logo.svg"
+                alt="Mayo Clinic Logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">Care at Mayo Clinic</a>
+          </li>
+          <li><a href="./health-library.html">Health Library</a></li>
+          <li>
+            <a href="./research-and-education-at-mayo-clinic.html"
+              >Research And Education</a
+            >
+          </li>
+          <li>
+            <a href="./for-medical-professionals.html"
+              >For Medical Professionals</a
+            >
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">Giving to Mayo Clinic</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1>Mayo Clinic Rochester Appointment Registration</h1>
+    <form id="appointment-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="reason">Reason for Appointment:</label>
+      <textarea id="reason" name="reason" required></textarea>
+
+      <label for="reason">Prefered Time for Appointment:</label>
+      <textarea id="time" name="time" required></textarea>
+
+      <button type="submit" onclick="getRandomAppointmentTime()">Submit</button>
+    </form>
+    <br /><br /><br /><br /><br />
+    <div class="donation-prompt-container">
+      <table class="donation-prompt-table">
+        <tr>
+          <td>
+            <img
+              src="./Assets/cancer-ribbon.svg"
+              alt="Cancer Ribbon"
+              style="height: 200px; width: 240px"
+            />
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              Your Gift Holds Great Power<br />- Donate today!
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+              Make your tax-deductible gift and be a part of the<br />
+              cutting-edge research and care that's changing<br />
+              medicine.
+            </div>
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">
+              Donate
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--Footer-->
+    <footer>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+      <div
+        class="footer-container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          background-color: #0d3362;
+          color: #fff;
+        "
+      >
+        <div class="follow-links">
+          <h3>Follow Mayo Clinic</h3>
+          <ul style="list-style-type: none; padding: 0; display: flex">
+            <li style="margin-right: 10px">
+              <a href="#"><i class="fab fa-twitter" style="color: #fff"></i></a>
+            </li>
+            <li style="margin-right: 10px">
+              <a href="#"
+                ><i class="fab fa-facebook" style="color: #fff"></i
+              ></a>
+            </li>
+            <li style="margin-right: 10px">
+              <a href="#"
+                ><i class="fab fa-linkedin" style="color: #fff"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-instagram" style="color: #fff"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-links">
+          <h3>Get the Mayo Clinic app</h3>
+          <a href="#"
+            ><img
+              src="https://assets.mayoclinic.org/content/dam/mayoclinic/badges/Google_Play_Store_badge_EN.svg"
+              alt="Google Play"
+              style="height: 40px; margin-right: 10px"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://assets.mayoclinic.org/content/dam/mayoclinic/badges/App_Store_Badge_EN.svg"
+              alt="App Store"
+              style="height: 40px"
+          /></a>
+        </div>
+      </div>
+      <div
+        class="footer-links"
+        style="
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          background-color: #012d61;
+          color: #fff;
+        "
+      >
+        <a
+          href="#"
+          style="margin-right: 20px; color: #fff; text-decoration: none"
+          >Terms &amp; Conditions</a
+        >
+        <a
+          href="#"
+          style="margin-right: 20px; color: #fff; text-decoration: none"
+          >Privacy Policy</a
+        >
+        <a
+          href="#"
+          style="margin-right: 20px; color: #fff; text-decoration: none"
+          >Notice of Privacy Practices</a
+        >
+        <a
+          href="#"
+          style="margin-right: 20px; color: #fff; text-decoration: none"
+          >Notice of Nondiscrimination</a
+        >
+        <a
+          href="#"
+          style="margin-right: 20px; color: #fff; text-decoration: none"
+          >Accessibility Statement</a
+        >
+        <a
+          href="#"
+          style="margin-right: 20px; color: #fff; text-decoration: none"
+          >Advertising &amp; Sponsorship Policy</a
+        >
+        <a href="#" style="color: #fff; text-decoration: none">Site Map</a>
+      </div>
+      <div
+        class="copyright"
+        style="
+          background-color: #012d61;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+        "
+      >
+        © 1998-2024 Mayo Foundation for Medical Education and Research (MFMER).
+        All rights reserved.
+      </div>
+    </footer>
+  </body>
+  <script>
+    function openDonatePage() {
+      window.location.href = "./donate.html";
+    }
+    function getRandomAppointmentTime() {
+      alert("Your appointment has been booked");
+    }
+  </script>
+</html>

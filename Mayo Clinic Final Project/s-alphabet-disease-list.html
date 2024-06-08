@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disease Names and Symptoms</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <center><h1>Diseases Starting with S</h1></center>
+  <dl>
+    <dt><b>1. Sepsis</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Fever, rapid heart rate, rapid breathing,
+      confusion, and low blood pressure.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sepsis is a potentially life-threatening
+      condition caused by the body's response to an infection. The immune
+      system releases chemicals into the bloodstream to fight the infection,
+      which can lead to inflammation throughout the body.
+    </dd>
+
+    <dt><b>2. Schizophrenia</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Hallucinations, delusions, disorganized
+      thinking, lack of motivation, and reduced emotional expression.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Schizophrenia is a chronic and severe
+      mental disorder that affects how a person thinks, feels, and behaves. It
+      is characterized by distorted thoughts, perceptions, and emotions.
+    </dd>
+
+    <dt><b>3. Stroke</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Sudden numbness or weakness in the face, arm,
+      or leg, confusion, trouble speaking or understanding speech, difficulty
+      walking, dizziness, and severe headache.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> A stroke occurs when the blood supply to
+      part of the brain is interrupted or reduced, depriving brain tissue of
+      oxygen and nutrients. This can cause brain cells to die and lead to
+      permanent brain damage.
+    </dd>
+
+    <dt><b>4. Sickle Cell Anemia</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Fatigue, pain in the chest, arms, legs, and
+      abdomen, jaundice, and frequent infections.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sickle cell anemia is a genetic disorder
+      characterized by abnormal hemoglobin in the red blood cells. These
+      abnormal cells can become rigid and sticky, blocking blood flow and
+      causing pain and organ damage.
+    </dd>
+
+    <dt><b>5. Shingles</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Pain, burning, numbness, or tingling followed
+      by a rash that usually appears as a single stripe of blisters on one
+      side of the body.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Shingles is a viral infection caused by the
+      varicella-zoster virus, the same virus that causes chickenpox. After a
+      person has had chickenpox, the virus can remain dormant in the body and
+      reactivate years later, causing shingles.
+    </dd>
+
+    <dt><b>6. Strep Throat</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Sore throat, fever, swollen tonsils,
+      difficulty swallowing, and red spots on the roof of the mouth.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Strep throat is a bacterial infection
+      caused by the Streptococcus bacteria. It is characterized by
+      inflammation and pain in the throat, and it is highly contagious.
+    </dd>
+
+    <dt><b>7. Systemic Lupus Erythematosus (SLE)</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Fatigue, joint pain and swelling, skin
+      rashes, fever, and sensitivity to light.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Systemic lupus erythematosus is an
+      autoimmune disease in which the body's immune system mistakenly attacks
+      healthy tissues, leading to inflammation and damage in various parts of
+      the body.
+    </dd>
+
+    <dt><b>8. Sleep Apnea</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Loud snoring, episodes of breathing cessation
+      during sleep, gasping for air during sleep, and daytime sleepiness.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sleep apnea is a sleep disorder
+      characterized by pauses in breathing or shallow breaths during sleep. It
+      can lead to poor sleep quality and daytime fatigue.
+    </dd>
+
+    <dt><b>9. Seasonal Allergies (Allergic Rhinitis)</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Sneezing, runny or stuffy nose, itchy or
+      watery eyes, and coughing.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Seasonal allergies, also known as allergic
+      rhinitis, occur when the immune system overreacts to allergens such as
+      pollen, mold, or pet dander, leading to inflammation and symptoms in the
+      nose and eyes.
+    </dd>
+
+    <dt><b>10. Sarcoidosis</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Fatigue, swollen lymph nodes, shortness of
+      breath, cough, skin rashes, and joint pain.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sarcoidosis is a condition characterized by
+      the growth of inflammatory cells in various organs, most commonly the
+      lungs and lymph nodes. The exact cause is unknown.
+    </dd>
+
+    <dt><b>11. Salmonella Infection</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Diarrhea, fever, abdominal cramps, nausea,
+      and vomiting.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Salmonella infection is a bacterial
+      infection caused by the Salmonella bacteria. It is typically contracted
+      by consuming contaminated food or water.
+    </dd>
+
+    <dt><b>12. Scoliosis</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Uneven shoulders, one shoulder blade that
+      appears more prominent than the other, uneven waist, and leaning to one
+      side.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Scoliosis is a sideways curvature of the
+      spine that most often occurs during the growth spurt just before
+      puberty. In severe cases, it can cause pain and breathing difficulties.
+    </dd>
+
+    <dt><b>13. Sjögren's Syndrome</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Dry eyes, dry mouth, difficulty swallowing,
+      fatigue, and joint pain.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sjögren's syndrome is an autoimmune
+      disorder in which the immune system attacks the glands that produce
+      moisture in the body, leading to dryness in the eyes, mouth, and other
+      areas.
+    </dd>
+
+    <dt><b>14. Sickle Cell Disease</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Pain, anemia, swelling in the hands and feet,
+      frequent infections, and delayed growth.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sickle cell disease is a group of inherited
+      red blood cell disorders. It is characterized by abnormal hemoglobin
+      that causes red blood cells to become rigid and sickle-shaped, leading
+      to blockages in blood vessels and other complications.
+    </dd>
+
+    <dt><b>15. Stevens-Johnson Syndrome</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Painful red or purplish rash that spreads and
+      blisters, facial swelling, and tongue swelling.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Stevens-Johnson syndrome is a rare and
+      serious disorder of the skin and mucous membranes. It is usually a
+      reaction to medication or an infection and requires emergency medical
+      treatment.
+    </dd>
+
+    <dt><b>16. Swine Flu (H1N1 Influenza)</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Fever, cough, sore throat, runny or stuffy
+      nose, body aches, headache, chills, and fatigue.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Swine flu, caused by the H1N1 influenza
+      virus, is a respiratory illness that spreads from person to person,
+      primarily through coughing or sneezing.
+    </dd>
+
+    <dt><b>17. Syphilis</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Sores (chancre) on the genitals, rectum, or
+      mouth, rash, fever, swollen lymph nodes, and hair loss.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Syphilis is a sexually transmitted
+      infection caused by the bacterium Treponema pallidum. It progresses
+      through stages if left untreated and can cause serious health
+      complications.
+    </dd>
+
+    <dt><b>18. Systemic Sclerosis (Scleroderma)</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Thickening and tightening of the skin,
+      Raynaud's phenomenon, joint pain, muscle weakness, and digestive
+      problems.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Systemic sclerosis, also known as
+      scleroderma, is a chronic autoimmune disease characterized by the
+      hardening and tightening of the skin and connective tissues. It can
+      affect internal organs as well.
+    </dd>
+
+    <dt><b>19. Scarlet Fever</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Red rash that feels like sandpaper, sore
+      throat, fever, headache, and swollen glands.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Scarlet fever is a bacterial infection
+      caused by group A Streptococcus bacteria. It primarily affects children
+      and is characterized by a rash and fever.
+    </dd>
+
+    <dt><b>20. Spondylitis</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Back pain, stiffness, and reduced range of
+      motion in the spine.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Spondylitis is a type of arthritis that
+      primarily affects the spine. It causes inflammation and stiffness in the
+      joints between the vertebrae.
+    </dd>
+
+    <dt><b>21. Skin Cancer</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Changes in the skin, such as a new growth, a
+      sore that doesn't heal, or a change in an existing mole.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Skin cancer is the abnormal growth of skin
+      cells, most often caused by exposure to ultraviolet radiation from the
+      sun or tanning beds.
+    </dd>
+
+    <dt><b>22. Smallpox</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Fever, fatigue, headache, and rash with
+      pus-filled blisters.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Smallpox is a contagious and sometimes
+      fatal disease caused by the variola virus. It was declared eradicated in
+      1980 after a successful vaccination campaign.
+    </dd>
+
+    <dt><b>23. Stomach Ulcers (Peptic Ulcers)</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Burning stomach pain, nausea, vomiting,
+      bloating, and weight loss.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Stomach ulcers, also known as peptic
+      ulcers, are open sores that develop on the lining of the stomach, small
+      intestine, or esophagus. They are often caused by infection with
+      Helicobacter pylori bacteria or long-term use of nonsteroidal
+      anti-inflammatory drugs (NSAIDs).
+    </dd>
+
+    <dt><b>24. Swimmer's Ear (Otitis Externa)</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Ear pain, itching, redness, and drainage of
+      pus.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Swimmer's ear, or otitis externa, is an
+      infection of the outer ear canal, typically caused by bacteria or fungi.
+      It is often associated with swimming or exposure to water.
+    </dd>
+
+    <dt><b>25. Sprains</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Pain, swelling, bruising, and limited range
+      of motion in the affected joint.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> A sprain is an injury to a ligament, the
+      tough, fibrous tissue that connects bones to each other at a joint.
+      Sprains occur when a joint is forced beyond its normal range of motion,
+      causing stretching or tearing of the ligament.
+    </dd>
+
+    <!-- Add more diseases here -->
+
+    <dt><b>26. Sinusitis</b></dt>
+    <dd>
+      <strong>Symptoms:</strong> Facial pain or pressure, nasal congestion,
+      nasal discharge, cough, and reduced sense of smell.
+    </dd>
+    <dd>
+      <strong>Definition:</strong> Sinusitis is inflammation or swelling of
+      the tissue lining the sinuses. It can be caused by infection, allergies,
+      or other factors and may be acute or chronic.
+    </dd>
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

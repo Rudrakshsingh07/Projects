@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with A</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+    nav h4{
+      color: black;
+    }
+    nav a:active ,a:hover, a:visited, a:link{
+      text-decoration: none;
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <h1>List of Diseases Starting with A</h1>
+  <div class="container">
+    <ul class="disease-list">
+      <li>
+        <dl>
+          <dt><span class="disease-name">Asthma</span></dt>
+          <dd>
+            <span class="definition">A chronic respiratory condition characterized by difficulty
+              breathing, wheezing, and coughing.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Shortness of breath, chest tightness, coughing, wheezing.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Alzheimer's Disease</span></dt>
+          <dd>
+            <span class="definition">A progressive neurodegenerative disease leading to memory loss
+              and cognitive decline.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Memory loss, confusion, difficulty in problem-solving, mood
+              swings.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Anemia</span></dt>
+          <dd>
+            <span class="definition">A condition characterized by a deficiency of red blood cells or
+              hemoglobin in the blood.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Fatigue, weakness, pale skin, shortness of breath.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Arthritis</span></dt>
+          <dd>
+            <span class="definition">Inflammation of one or more joints, causing pain and
+              stiffness.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Joint pain, stiffness, swelling, decreased range of
+              motion.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <span class="disease-name">AIDS (Acquired Immunodeficiency Syndrome)</span>
+          </dt>
+          <dd>
+            <span class="definition">A chronic, potentially life-threatening condition caused by the
+              HIV virus, which damages the immune system.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Fever, fatigue, weight loss, recurrent infections.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Acne</span></dt>
+          <dd>
+            <span class="definition">A skin condition characterized by pimples, blackheads, and
+              cysts.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Pimples, blackheads, whiteheads, oily skin.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Allergies</span></dt>
+          <dd>
+            <span class="definition">An abnormal immune response to a usually harmless
+              substance.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Sneezing, runny or stuffy nose, itchy eyes, rash.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Appendicitis</span></dt>
+          <dd>
+            <span class="definition">Inflammation of the appendix, often resulting in severe
+              abdominal pain.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Abdominal pain, nausea, vomiting, loss of appetite.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Autism</span></dt>
+          <dd>
+            <span class="definition">A developmental disorder that affects communication and
+              behavior.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Difficulty in social interaction, repetitive behaviors,
+              communication challenges.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Anorexia Nervosa</span></dt>
+          <dd>
+            <span class="definition">An eating disorder characterized by an abnormally low body
+              weight, intense fear of gaining weight, and distorted body
+              image.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Extreme weight loss, refusal to maintain a healthy weight,
+              distorted body image.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Arrhythmia</span></dt>
+          <dd>
+            <span class="definition">An irregular heartbeat rhythm.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Palpitations, dizziness, fainting, shortness of breath.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Anxiety Disorders</span></dt>
+          <dd>
+            <span class="definition">A group of mental health disorders characterized by feelings of
+              anxiety and fear.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Excessive worrying, restlessness, irritability, panic
+              attacks.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Aplastic Anemia</span></dt>
+          <dd>
+            <span class="definition">A rare condition in which the bone marrow fails to produce
+              enough blood cells.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Fatigue, weakness, frequent infections, paleness.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Aphasia</span></dt>
+          <dd>
+            <span class="definition">A language disorder that affects a person's ability to
+              communicate.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Difficulty speaking, understanding speech, and writing.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Addison's Disease</span></dt>
+          <dd>
+            <span class="definition">A disorder that occurs when the adrenal glands do not produce
+              enough hormones.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Fatigue, weight loss, low blood pressure, skin darkening.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Agoraphobia</span></dt>
+          <dd>
+            <span class="definition">An anxiety disorder characterized by fear and avoidance of
+              places or situations that might cause panic or
+              embarrassment.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Fear of being in crowded places, fear of leaving home alone,
+              panic attacks.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Achalasia</span></dt>
+          <dd>
+            <span class="definition">A disorder of the esophagus that makes it difficult to swallow
+              food and liquids.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Difficulty swallowing, regurgitation of food, chest pain.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Asthma</span></dt>
+          <dd>
+            <span class="definition">A chronic respiratory condition characterized by difficulty
+              breathing, wheezing, and coughing.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Shortness of breath, chest tightness, coughing, wheezing.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Acromegaly</span></dt>
+          <dd>
+            <span class="definition">A hormonal disorder that results from excessive growth hormone
+              in the body.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Enlargement of hands and feet, coarsening of facial features,
+              joint pain.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Atopic Dermatitis</span></dt>
+          <dd>
+            <span class="definition">A type of eczema characterized by itchy and inflamed
+              skin.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Itchy, red, and dry skin, rash, thickened skin.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Aplasia Cutis Congenita</span></dt>
+          <dd>
+            <span class="definition">A rare condition where a newborn is missing skin on certain
+              areas of the body.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Missing skin, shallow ulcers or scars, hair loss in the
+              affected area.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Acute Kidney Injury</span></dt>
+          <dd>
+            <span class="definition">A sudden and temporary loss of kidney function.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Decreased urine output, fluid retention, confusion,
+              fatigue.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <span class="disease-name">Acute Respiratory Distress Syndrome (ARDS)</span>
+          </dt>
+          <dd>
+            <span class="definition">A severe lung condition caused by a variety of direct and
+              indirect injuries to the lungs.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Severe shortness of breath, rapid breathing, low blood oxygen
+              levels.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Actinic Keratosis</span></dt>
+          <dd>
+            <span class="definition">A rough, scaly patch of skin caused by years of sun
+              exposure.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Rough, scaly patch of skin, sometimes with a raised bump or
+              horn-like growth.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Adenomyosis</span></dt>
+          <dd>
+            <span class="definition">A condition where the tissue that normally lines the uterus
+              grows into the muscular wall of the uterus.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Heavy menstrual bleeding, severe menstrual cramps, pain during
+              intercourse.</span>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><span class="disease-name">Amoebiasis</span></dt>
+          <dd>
+            <span class="definition">An infection of the intestines caused by the amoeba Entamoeba
+              histolytica.</span>
+          </dd>
+          <dd>
+            <span class="symptoms">Abdominal pain, diarrhea, bloody stools, fever.</span>
+          </dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

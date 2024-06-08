@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease Names and Symptoms</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with "L"</h1></center>
+
+    <dl>
+      <dt><b>Lupus</b></dt>
+      <dd>
+        A chronic autoimmune disease characterized by inflammation of various
+        parts of the body, particularly the skin, joints, kidneys, and brain.
+      </dd>
+
+      <dt><b>Lyme Disease</b></dt>
+      <dd>
+        An infectious disease caused by bacteria transmitted through the bite of
+        infected black-legged ticks. Symptoms include fever, headache, fatigue,
+        and a characteristic skin rash called erythema migrans.
+      </dd>
+
+      <dt><b>Leukemia</b></dt>
+      <dd>
+        A type of cancer that affects the blood and bone marrow, characterized
+        by the overproduction of abnormal white blood cells. Symptoms include
+        fatigue, easy bruising, and susceptibility to infections.
+      </dd>
+
+      <dt><b>Liver Cirrhosis</b></dt>
+      <dd>
+        A late stage of scarring (fibrosis) of the liver caused by many forms of
+        liver diseases and conditions, such as hepatitis and chronic alcoholism.
+        Symptoms include fatigue, jaundice, and abdominal pain.
+      </dd>
+
+      <dt><b>Lung Cancer</b></dt>
+      <dd>
+        A malignant tumor that starts in the cells of the lung. Symptoms may
+        include coughing, chest pain, shortness of breath, and weight loss.
+      </dd>
+
+      <dt><b>Lymphoma</b></dt>
+      <dd>
+        A type of cancer that affects the lymphatic system, including the lymph
+        nodes, spleen, and other organs of the immune system. Symptoms may
+        include swollen lymph nodes, fever, and weight loss.
+      </dd>
+
+      <dt><b>Laryngitis</b></dt>
+      <dd>
+        Inflammation of the larynx (voice box) due to overuse, infection, or
+        irritation. Symptoms include hoarseness, sore throat, and difficulty
+        speaking.
+      </dd>
+
+      <dt><b>Leishmaniasis</b></dt>
+      <dd>
+        A parasitic disease caused by the Leishmania parasite, transmitted
+        through the bite of infected sandflies. Symptoms vary depending on the
+        type of leishmaniasis but may include skin sores, fever, and enlarged
+        spleen.
+      </dd>
+
+      <dt><b>Lactose Intolerance</b></dt>
+      <dd>
+        A digestive disorder in which the body is unable to digest lactose, a
+        sugar found in milk and dairy products. Symptoms include bloating,
+        diarrhea, and abdominal cramps.
+      </dd>
+
+      <dt><b>Lupus Nephritis</b></dt>
+      <dd>
+        Inflammation of the kidneys caused by systemic lupus erythematosus
+        (SLE), a chronic autoimmune disease. Symptoms may include blood in the
+        urine, swelling of the legs, and high blood pressure.
+      </dd>
+
+      <dt><b>Laryngeal Cancer</b></dt>
+      <dd>
+        Cancer that develops in the tissues of the larynx (voice box). Symptoms
+        may include hoarseness, difficulty swallowing, and a persistent sore
+        throat.
+      </dd>
+
+      <dt><b>Lymphedema</b></dt>
+      <dd>
+        Swelling that occurs due to the accumulation of lymph fluid in the
+        tissues, usually in the arms or legs. It can be caused by lymph node
+        removal, injury, or congenital conditions.
+      </dd>
+
+      <dt><b>Lipoma</b></dt>
+      <dd>
+        A benign tumor made up of fat tissue. Lipomas are usually painless and
+        most often found in the neck, shoulders, back, or arms.
+      </dd>
+
+      <dt><b>Lead Poisoning</b></dt>
+      <dd>
+        A condition caused by exposure to lead, typically through contaminated
+        water, paint, or dust. Symptoms may include abdominal pain,
+        constipation, and neurological issues.
+      </dd>
+
+      <dt><b>Labyrinthitis</b></dt>
+      <dd>
+        Inflammation of the labyrinth, a part of the inner ear that helps
+        control balance and hearing. Symptoms include vertigo, nausea, and
+        hearing loss.
+      </dd>
+
+      <dt><b>Lyme Carditis</b></dt>
+      <dd>
+        A rare complication of Lyme disease where the bacteria infect the heart.
+        Symptoms may include chest pain, palpitations, and shortness of breath.
+      </dd>
+
+      <dt><b>Liver Abscess</b></dt>
+      <dd>
+        A pus-filled cavity in the liver, usually caused by a bacterial
+        infection. Symptoms may include fever, abdominal pain, and jaundice.
+      </dd>
+
+      <dt><b>Lewy Body Dementia</b></dt>
+      <dd>
+        A progressive neurological disorder characterized by the presence of
+        abnormal protein deposits (Lewy bodies) in the brain. Symptoms may
+        include cognitive decline, visual hallucinations, and movement problems.
+      </dd>
+
+      <dt><b>Lymphangitis</b></dt>
+      <dd>
+        Inflammation of the lymphatic vessels, usually due to an infection.
+        Symptoms include red streaks on the skin, swelling, and pain along the
+        affected vessels.
+      </dd>
+
+      <dt><b>Legionnaires' Disease</b></dt>
+      <dd>
+        A severe form of pneumonia caused by the Legionella bacteria. Symptoms
+        include fever, chills, cough, and muscle aches.
+      </dd>
+
+      <dt><b>Liver Cancer</b></dt>
+      <dd>
+        Cancer that starts in the liver cells. Symptoms may include abdominal
+        pain, unexplained weight loss, and jaundice.
+      </dd>
+
+      <dt><b>Lichen Planus</b></dt>
+      <dd>
+        An inflammatory skin condition characterized by itchy, flat-topped bumps
+        that may be shiny and reddish-purple in color. It can affect the skin,
+        mouth, nails, and genitals.
+      </dd>
+
+      <dt><b>Laryngopharyngeal Reflux (LPR)</b></dt>
+      <dd>
+        A condition where stomach acid backs up into the throat, leading to
+        irritation and inflammation. Symptoms may include hoarseness, chronic
+        cough, and throat clearing.
+      </dd>
+
+      <dt><b>Lymphocytic Colitis</b></dt>
+      <dd>
+        A type of inflammatory bowel disease characterized by chronic
+        inflammation of the colon. Symptoms include watery diarrhea, abdominal
+        pain, and weight loss.
+      </dd>
+
+      <dt><b>Langerhans Cell Histiocytosis</b></dt>
+      <dd>
+        A rare disorder characterized by an overproduction of Langerhans cells,
+        a type of immune cell. It can affect various organs and systems in the
+        body, leading to a wide range of symptoms.
+      </dd>
+
+      <dt><b>Lymphoproliferative Disorders</b></dt>
+      <dd>
+        A group of disorders characterized by the abnormal growth of lymphocytes
+        (a type of white blood cell). These disorders include lymphomas and
+        leukemias.
+      </dd>
+
+      <dt><b>Liposarcoma</b></dt>
+      <dd>
+        A type of cancer that develops in the fat cells. Liposarcomas can occur
+        anywhere in the body but are most commonly found in the limbs or
+        abdomen.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

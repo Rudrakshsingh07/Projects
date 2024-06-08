@@ -1,0 +1,593 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"></a>
+            <img
+              id="logo"
+              style="height: 55px; width: 65px"
+              src="./Assets/mayo-clinic-logo.svg"
+            />
+          </li>
+          <li>
+            <a href="./care-at-mayo-clinic.html"
+              ><h4>Care at Mayo Clinic</h4></a
+            >
+          </li>
+          <li>
+            <a href="./health-library.html"><h4>Health Library</h4></a>
+          </li>
+          <li>
+            <a href="./research-and-education-at-mayo-clinic.html"
+              ><h4>Research And Education at Mayo Clinic</h4></a
+            >
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html"
+              ><h4>For Medical Professionals</h4></a
+            >
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html"
+              ><h4>Giving to Mayo Clinic</h4></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./Assets/a.mp4" type="video/mp4" />
+      </video>
+      <div class="content">
+        <h1>Transforming your Care</h1>
+        <button class="appointment-request-button" onclick="">
+          Request Appointment
+        </button>
+      </div>
+    </div>
+    <div id="search-container">
+      <div id="find-disease-by-name">
+        <h3>Search diseases & conditions by Name</h3>
+        <br />
+        <input
+          type="text"
+          class="search-disease-name-input"
+          placeholder="Search"
+          id="disease-name"
+        />
+      </div>
+
+      <div class="container">
+        <div id="find-disease-by-letter">
+          <h3>Search Disease or Condition by its First Letter</h3>
+          <br />
+          <table>
+            <tr>
+              <td>
+                <button class="find-disease-alphabets" onclick="">A</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">B</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">C</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">D</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">E</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">F</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">G</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">H</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">I</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">J</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">K</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="find-disease-alphabets" onclick="">L</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">M</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">N</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">O</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">P</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">Q</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">R</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">S</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">T</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">U</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">V</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="find-disease-alphabets" onclick="">W</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">X</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">Y</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">Z</button>
+              </td>
+              <td>
+                <button class="find-disease-alphabets" onclick="">#</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <hr class="divider-line" />
+    <br />
+    <br />
+
+    <div class="healing-starts-here-container">
+      <div class="healing-starts-here-text">
+        <h1><b>Healing starts here</b></h1>
+        <br /><br />
+        <b>The right answers the first time</b>
+        <br /><br />
+        Effective treatment depends on getting the right <br />
+        diagnosis. Our experts diagnose and treat the<br />
+        toughest medical challenges.
+        <br /><br />
+        <b>Top-ranked in the U.S.</b>
+        <br /><br />
+        Mayo Clinic has more No. 1 rankings than any
+        <br />
+        other hospital in the nation according to U.S. <br />
+        News & World Report. Learn more about our top-ranked specialties.
+      </div>
+      <img
+        src="./Assets/healing-starts-here-MC11REJU-600x800.jpg"
+        class="healing-starts-here-image"
+      />
+    </div>
+    <br />
+    <button class="healing-starts-here-button">Why choose Mayo Clinic</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr class="divider-line" />
+    <br />
+    <br />
+    <!-- New div -->
+    <div class="container">
+      <div class="text-container">
+        <h2>World-class care for global patients</h2>
+        <p>
+          We make it easy for patients around the world to get care from Mayo
+          Clinic.
+        </p>
+        <br />
+        <br />
+        <button class="world-class-care-button">International Service</button>
+      </div>
+      <div class="image-container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <img
+          src="https://assets.mayoclinic.org/content/dam/media/global/images/2023/12/28/world-class%20care-MC1XASH-600x800.jpg"
+          alt="Your Image"
+        />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr class="divider-line" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
+
+
+CSS:
+nav {
+  color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 104px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+li {
+  margin-right: 1rem;
+  padding: 30px;
+}
+a {
+  color: black;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease;
+}
+a:hover {
+  color: #137ade;
+  transition: background-color 0.3s ease;
+}
+.logo {
+  height: 55px;
+  width: 65px;
+}
+.NavLinks {
+  height: 104px;
+}
+body {
+  margin: 0;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.content h1 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 450px;
+}
+.appointment-request-button {
+  position: absolute;
+  bottom: 56px;
+  left: 405px;
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.appointment_request:hover {
+  color: #ddf1ff;
+}
+
+.find-disease-by-letter {
+  margin-left: 305px;
+  margin-top: 100px;
+  height: 360px;
+  position: absolute;
+  left: 360px;
+}
+
+.find-disease-alphabets {
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: #137ade;
+  text-emphasis-color: #137ade;
+}
+
+.search-disease-name-input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  cursor: text;
+  text-decoration: black;
+}
+#search-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#find-disease-by-name,
+#find-disease-by-letter {
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000000;
+}
+
+#find-disease-by-name {
+  background-color: #ffffff;
+  order: 2;
+}
+
+#find-disease-by-letter {
+  background-color: #ffffff;
+  order: 1;
+}
+#find-disease-by-letter {
+  background-color: #ffffff;
+  order: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.find-disease-alphabets {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #137ade;
+  background-color: transparent;
+  color: #137ade;
+  font-size: 18px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.find-disease-alphabets:hover {
+  background-color: #137ade;
+  color: #fff;
+}
+
+.search-disease-name-input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  cursor: text;
+  text-decoration: black;
+  font-size: 18px;
+  width: 635px;
+}
+
+.divider-line {
+  width: 1296px;
+  height: 1px;
+}
+
+.healing-starts-here-container {
+  position: relative;
+  width: calc(100% - 291px - 105px);
+  margin-left: 291px;
+  margin-right: 105px;
+  background-color: white;
+}
+
+.healing-starts-here-text {
+  padding: 20px;
+  line-height: 17 px;
+  font-size: large;
+}
+
+.healing-starts-here-image {
+  position: absolute;
+  right: 105px;
+  top: 0;
+  border-radius: 20px;
+}
+
+.healing-starts-here-button {
+  position: absolute;
+  font-size: 18px;
+  border-radius: 20px;
+  border-color: #137ade;
+  color: #137ade;
+  padding: 12px 30px;
+  left: 291px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container {
+  position: relative;
+  width: calc(100% - 500px); /* Adjust the width of the container */
+  max-width: 1075px; /* Adjust the maximum width of the container */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+}
+
+.text-container {
+  position: absolute;
+  left: 700px; /* Distance from the right edge */
+  top: 400px;
+  transform: translateY(-50%);
+  padding-right: 105px; /* Distance from the image */
+}
+
+.text-container h2 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.text-container p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.image-container img {
+  position: absolute;
+  border-radius: 10px;
+  width: 530px;
+  height: 700px;
+  display: block;
+  margin-left: auto;
+  bottom: -680px;
+  right: 600px;
+}
+
+.world-class-care-button {
+  padding: 10px 20px;
+  border: 2px solid #134ade;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #134ade;
+  cursor: pointer;
+  font-size: 18px;
+  width: 305px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0 360px; /* Ensure 360px gap on both sides */
+}
+
+#find-disease-by-letter {
+  width: auto; /* Allow the div to take the necessary width */
+}
+
+#search-container {
+  width: auto; /* Allow the div to take the necessary width */
+}

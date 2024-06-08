@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with Z</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with Z</h1></center>
+
+    <dl>
+      <dt><b>Zika Virus</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Fever, rash, joint pain, conjunctivitis,
+        muscle pain, headache.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zika virus is a mosquito-borne virus
+        transmitted primarily by Aedes mosquitoes, which bite during the day.
+      </dd>
+
+      <dt><b>Zollinger-Ellison Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Abdominal pain, diarrhea, acid reflux,
+        ulcers, unintended weight loss.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zollinger-Ellison Syndrome is a rare
+        condition characterized by tumors in the pancreas or duodenum that
+        secrete excessive levels of gastrin, leading to the overproduction of
+        stomach acid and ulcers.
+      </dd>
+
+      <dt><b>Zygomycosis</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Fever, headache, cough, chest pain, shortness
+        of breath, skin lesions, black necrotic areas on skin.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zygomycosis, also known as mucormycosis, is
+        a serious fungal infection caused by fungi of the order Mucorales. It
+        primarily affects people with weakened immune systems.
+      </dd>
+
+      <dt><b>Zellweger Syndrome</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Facial abnormalities, severe intellectual
+        disability, poor muscle tone, liver dysfunction, hearing and vision
+        problems.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zellweger Syndrome is a rare genetic
+        disorder characterized by the absence or dysfunction of peroxisomes in
+        cells, resulting in the accumulation of toxic substances in the body.
+      </dd>
+
+      <dt><b>Zinc Deficiency</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Growth retardation, delayed sexual
+        maturation, impaired immune function, hair loss, diarrhea, delayed wound
+        healing.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zinc deficiency is a nutritional disorder
+        caused by inadequate intake or absorption of zinc, an essential mineral
+        involved in various physiological processes.
+      </dd>
+
+      <dt><b>Zygotene Stage of Meiosis</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Not applicable (as it's a stage of cellular
+        division).
+      </dd>
+      <dd>
+        <strong>Definition:</strong> The zygotene stage is the second stage of
+        meiosis I, during which homologous chromosomes begin to pair and
+        synapse, forming structures called synaptonemal complexes.
+      </dd>
+
+      <dt><b>Zoonosis</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Varies depending on the specific zoonotic
+        disease (e.g., fever, rash, respiratory symptoms, gastrointestinal
+        symptoms).
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zoonosis is any infectious disease that can
+        be transmitted from animals to humans, either directly or indirectly.
+      </dd>
+
+      <dt><b>Zytochrome P450 Deficiency</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Metabolic disturbances, drug toxicity,
+        hormone imbalances, jaundice, virilization in females.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Cytochrome P450 deficiency is a group of
+        genetic disorders affecting enzymes in the cytochrome P450 family, which
+        play a crucial role in the metabolism of drugs and other substances in
+        the body.
+      </dd>
+
+      <dt><b>Zinc Toxicity</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Nausea, vomiting, diarrhea, abdominal pain,
+        headache, metallic taste, lethargy.
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zinc toxicity, or zinc overdose, occurs
+        when there is an excessive intake or accumulation of zinc in the body,
+        leading to adverse effects on health.
+      </dd>
+
+      <dt><b>Zygote Intrafallopian Transfer (ZIFT)</b></dt>
+      <dd>
+        <strong>Symptoms:</strong> Not applicable (it's a reproductive
+        procedure).
+      </dd>
+      <dd>
+        <strong>Definition:</strong> Zygote intrafallopian transfer (ZIFT) is an
+        assisted reproductive technology procedure where a fertilized egg
+        (zygote) is transferred into the fallopian tube to facilitate
+        implantation and pregnancy.
+      </dd>
+
+      <!-- Add more diseases here -->
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

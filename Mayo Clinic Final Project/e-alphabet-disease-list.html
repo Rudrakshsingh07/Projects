@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with E</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+  <h1>Diseases starting with E</h1>
+
+  <dl>
+    <dt><b>Ebola Virus Disease</b></dt>
+    <dd>
+      A severe and often fatal illness in humans caused by the Ebola virus.
+      Symptoms include fever, severe headache, muscle pain, weakness, fatigue,
+      diarrhea, vomiting, abdominal pain, and unexplained bleeding or
+      bruising.
+    </dd>
+
+    <dt><b>Eczema</b></dt>
+    <dd>
+      A chronic skin condition characterized by inflamed, red, dry, and itchy
+      skin. Symptoms include itching, redness, swelling, and sometimes
+      blistering or oozing of the skin.
+    </dd>
+
+    <dt><b>Ehrlichiosis</b></dt>
+    <dd>
+      An infectious disease transmitted by ticks that causes flu-like symptoms
+      such as fever, headache, fatigue, muscle aches, and sometimes rash.
+    </dd>
+
+    <dt><b>Epilepsy</b></dt>
+    <dd>
+      A neurological disorder characterized by recurrent seizures, which can
+      vary from brief lapses of attention or muscle jerks to severe and
+      prolonged convulsions.
+    </dd>
+
+    <dt><b>Erectile Dysfunction</b></dt>
+    <dd>
+      A condition in which a man is unable to achieve or maintain an erection
+      sufficient for sexual intercourse. Symptoms include difficulty getting
+      an erection, difficulty maintaining an erection, and reduced sexual
+      desire.
+    </dd>
+
+    <dt><b>Endometriosis</b></dt>
+    <dd>
+      A disorder in which tissue that normally lines the inside of the uterus
+      grows outside the uterus. Symptoms include pelvic pain, painful periods,
+      pain during intercourse, and infertility.
+    </dd>
+
+    <dt><b>Encephalitis</b></dt>
+    <dd>
+      Inflammation of the brain, usually caused by a viral infection. Symptoms
+      include fever, headache, confusion, seizures, and sometimes coma.
+    </dd>
+
+    <dt><b>Esophageal Cancer</b></dt>
+    <dd>
+      Cancer that develops in the esophagus, the muscular tube that connects
+      the throat to the stomach. Symptoms include difficulty swallowing, chest
+      pain, weight loss, and coughing up blood.
+    </dd>
+
+    <dt><b>Essential Tremor</b></dt>
+    <dd>
+      A neurological disorder characterized by uncontrollable shaking or
+      trembling, usually in the hands. Symptoms typically worsen with movement
+      or stress.
+    </dd>
+
+    <dt><b>Erythema Multiforme</b></dt>
+    <dd>
+      A skin condition characterized by target-like lesions or patches on the
+      skin. It is often triggered by infections, medications, or other
+      factors.
+    </dd>
+
+    <dt><b>Exocrine Pancreatic Insufficiency (EPI)</b></dt>
+    <dd>
+      A condition in which the pancreas does not produce enough digestive
+      enzymes, leading to malabsorption of nutrients. Symptoms include
+      diarrhea, weight loss, abdominal pain, and bloating.
+    </dd>
+
+    <dt><b>Emphysema</b></dt>
+    <dd>
+      A type of chronic obstructive pulmonary disease (COPD) characterized by
+      damage to the air sacs in the lungs, leading to difficulty breathing.
+      Symptoms include shortness of breath, coughing, wheezing, and chest
+      tightness.
+    </dd>
+
+    <dt><b>Enterovirus Infection</b></dt>
+    <dd>
+      An infection caused by enteroviruses, which are a group of viruses that
+      commonly cause mild to severe respiratory and gastrointestinal illness.
+      Symptoms vary depending on the specific virus but may include fever,
+      respiratory symptoms, rash, and diarrhea.
+    </dd>
+
+    <dt><b>Epidermolysis Bullosa</b></dt>
+    <dd>
+      A group of rare genetic conditions characterized by fragile skin that
+      blisters and tears easily. Symptoms include blistering of the skin, open
+      sores or wounds, scarring, and deformities of the nails and teeth.
+    </dd>
+
+    <dt><b>Eisenmenger Syndrome</b></dt>
+    <dd>
+      A complication of certain congenital heart defects that causes increased
+      blood flow to the lungs, leading to pulmonary hypertension and
+      eventually reversal of blood flow in the heart. Symptoms include
+      cyanosis (blue or purple skin discoloration), shortness of breath,
+      fatigue, and swelling of the ankles or abdomen.
+    </dd>
+
+    <dt><b>Erythema Nodosum</b></dt>
+    <dd>
+      A skin condition characterized by painful, red, tender nodules or lumps
+      that develop under the skin, usually on the shins. It is often
+      associated with underlying conditions such as infections, autoimmune
+      disorders, or medications.
+    </dd>
+
+    <dt><b>Eosinophilic Esophagitis</b></dt>
+    <dd>
+      An allergic inflammatory condition of the esophagus characterized by
+      high levels of eosinophils (a type of white blood cell) in the
+      esophageal tissue. Symptoms include difficulty swallowing, chest pain,
+      food impaction, and heartburn.
+    </dd>
+
+    <dt><b>Encephalopathy</b></dt>
+    <dd>
+      A broad term used to describe brain dysfunction or damage. It can have
+      various causes, including infections, toxins, metabolic disorders, and
+      brain injury. Symptoms vary but may include confusion, memory loss,
+      seizures, and changes in behavior or consciousness.
+    </dd>
+
+    <dt><b>Ebstein's Anomaly</b></dt>
+    <dd>
+      A rare congenital heart defect in which the tricuspid valve is
+      abnormally formed and positioned, leading to abnormal blood flow within
+      the heart. Symptoms vary but may include cyanosis, shortness of breath,
+      fatigue, and heart palpitations.
+    </dd>
+
+    <dt><b>Enthesitis-related Arthritis</b></dt>
+    <dd>
+      A type of juvenile idiopathic arthritis (JIA) characterized by
+      inflammation of the entheses, which are the sites where tendons and
+      ligaments attach to the bones. Symptoms include joint pain, stiffness,
+      swelling, and tenderness, especially in the lower extremities.
+    </dd>
+
+    <dt><b>Erythropoietic Protoporphyria</b></dt>
+    <dd>
+      A rare genetic disorder characterized by an abnormal accumulation of
+      protoporphyrin in the blood, which makes the skin extremely sensitive to
+      sunlight. Symptoms include painful burning or itching of the skin,
+      redness, swelling, and blistering after sun exposure.
+    </dd>
+
+    <dt><b>Ewing Sarcoma</b></dt>
+    <dd>
+      A rare type of cancer that primarily affects the bones or soft tissues.
+      It usually occurs in children and young adults. Symptoms depend on the
+      location of the tumor but may include pain, swelling, and a lump or
+      mass.
+    </dd>
+
+    <dt><b>Epiglottitis</b></dt>
+    <dd>
+      An inflammation of the epiglottis, a flap of tissue at the base of the
+      tongue that covers the windpipe during swallowing to prevent food from
+      entering the airway. It is usually caused by a bacterial infection and
+      can lead to severe respiratory obstruction. Symptoms include sore
+      throat, difficulty swallowing, drooling, and difficulty breathing.
+    </dd>
+
+    <dt><b>Ectopic Pregnancy</b></dt>
+    <dd>
+      A pregnancy that occurs outside the uterus, usually in the fallopian
+      tube. It is a potentially life-threatening condition that requires
+      immediate medical attention. Symptoms include abdominal pain, vaginal
+      bleeding, and shoulder pain.
+    </dd>
+
+    <dt><b>Epstein-Barr Virus (EBV) Infection</b></dt>
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

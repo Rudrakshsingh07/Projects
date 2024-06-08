@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with "I"</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with I</h1></center>
+    <dl>
+      <dt><b>Idiopathic Pulmonary Fibrosis</b></dt>
+      <dd>
+        A chronic and progressive lung disease characterized by scarring of the
+        lung tissue, which leads to breathing difficulties and decreased oxygen
+        levels in the blood.
+      </dd>
+
+      <dt><b>Influenza (Flu)</b></dt>
+      <dd>
+        An infectious respiratory illness caused by influenza viruses. Symptoms
+        include fever, cough, sore throat, body aches, fatigue, and sometimes
+        vomiting and diarrhea.
+      </dd>
+
+      <dt><b>Insomnia</b></dt>
+      <dd>
+        A sleep disorder characterized by difficulty falling asleep or staying
+        asleep, leading to insufficient or poor-quality sleep. Symptoms include
+        difficulty concentrating, irritability, and daytime fatigue.
+      </dd>
+
+      <dt><b>Interstitial Cystitis</b></dt>
+      <dd>
+        A chronic bladder condition characterized by pelvic pain, urinary
+        urgency, frequent urination, and discomfort in the bladder area.
+      </dd>
+
+      <dt><b>Iron-deficiency Anemia</b></dt>
+      <dd>
+        A condition characterized by a lack of sufficient iron in the body,
+        leading to reduced production of red blood cells and decreased
+        oxygen-carrying capacity in the blood. Symptoms include fatigue,
+        weakness, pale skin, shortness of breath, and dizziness.
+      </dd>
+
+      <dt><b>Ischemic Stroke</b></dt>
+      <dd>
+        A type of stroke that occurs when a blood vessel supplying blood to the
+        brain is obstructed by a clot, leading to a lack of oxygen and nutrients
+        to brain tissue. Symptoms include sudden weakness or numbness in the
+        face, arm, or leg, difficulty speaking, and confusion.
+      </dd>
+
+      <dt><b>Impetigo</b></dt>
+      <dd>
+        A contagious skin infection caused by bacteria, characterized by red
+        sores or blisters that burst and form a yellowish crust. It commonly
+        affects children.
+      </dd>
+
+      <dt><b>Irregular Heartbeat (Arrhythmia)</b></dt>
+      <dd>
+        A condition characterized by abnormal electrical activity in the heart,
+        leading to irregular heart rhythms. Symptoms include palpitations,
+        dizziness, fainting, chest pain, and shortness of breath.
+      </dd>
+
+      <dt><b>Interstitial Lung Disease</b></dt>
+      <dd>
+        A group of lung disorders characterized by inflammation and scarring of
+        the lung tissue, leading to breathing difficulties and decreased lung
+        function. Symptoms include shortness of breath, cough, and fatigue.
+      </dd>
+
+      <dt><b>Impaired Glucose Tolerance (Pre-diabetes)</b></dt>
+      <dd>
+        A condition in which blood glucose levels are higher than normal but not
+        high enough for a diagnosis of diabetes. It increases the risk of
+        developing type 2 diabetes and cardiovascular disease. Symptoms may not
+        be present initially.
+      </dd>
+
+      <dt><b>Insulin Resistance</b></dt>
+      <dd>
+        A condition in which cells in the body become resistant to the effects
+        of insulin, leading to high blood sugar levels. It is a precursor to
+        type 2 diabetes. Symptoms may include fatigue, increased hunger, and
+        weight gain.
+      </dd>
+
+      <dt><b>Inflammatory Bowel Disease (IBD)</b></dt>
+      <dd>
+        A group of inflammatory conditions of the colon and small intestine,
+        including Crohn's disease and ulcerative colitis. Symptoms include
+        abdominal pain, diarrhea, rectal bleeding, weight loss, and fatigue.
+      </dd>
+
+      <dt><b>Impaired Vision</b></dt>
+      <dd>
+        A condition characterized by reduced visual acuity or clarity, making it
+        difficult to see clearly. It can result from various eye conditions,
+        such as refractive errors, cataracts, glaucoma, or macular degeneration.
+      </dd>
+
+      <dt><b>Interstitial Nephritis</b></dt>
+      <dd>
+        An inflammation of the kidney's interstitial tissue, often caused by
+        medications, infections, or autoimmune diseases. Symptoms include fever,
+        rash, blood in the urine, and reduced urine output.
+      </dd>
+
+      <dt><b>Ischemic Heart Disease (Coronary Artery Disease)</b></dt>
+      <dd>
+        A condition characterized by reduced blood flow to the heart muscle due
+        to narrowing or blockage of the coronary arteries. Symptoms include
+        chest pain or discomfort (angina), shortness of breath, fatigue, and
+        weakness.
+      </dd>
+
+      <dt><b>Impaired Kidney Function</b></dt>
+      <dd>
+        A condition in which the kidneys are unable to effectively filter waste
+        products from the blood, leading to the accumulation of toxins and
+        electrolyte imbalances. Symptoms may include fatigue, swelling, changes
+        in urine output, and nausea.
+      </dd>
+
+      <dt><b>Inflammatory Arthritis</b></dt>
+      <dd>
+        A group of autoimmune diseases that cause inflammation of the joints,
+        leading to pain, stiffness, swelling, and reduced mobility. Examples
+        include rheumatoid arthritis, psoriatic arthritis, and ankylosing
+        spondylitis.
+      </dd>
+
+      <dt><b>Invasive Candidiasis</b></dt>
+      <dd>
+        A serious fungal infection caused by Candida species, which can affect
+        various organs in the body, such as the bloodstream, heart, brain, and
+        kidneys. Symptoms depend on the affected organ but may include fever,
+        chills, and organ dysfunction.
+      </dd>
+
+      <dt><b>Infantile Spasms</b></dt>
+      <dd>
+        A type of seizure disorder that occurs in infants, characterized by
+        brief, sudden, and repetitive muscle contractions or spasms. It can lead
+        to developmental delays and cognitive impairments if not treated early.
+      </dd>
+
+      <dt><b>Intrauterine Growth Restriction (IUGR)</b></dt>
+      <dd>
+        A condition in which a fetus does not grow at the expected rate during
+        pregnancy, leading to a lower birth weight and potential health problems
+        for the baby. Causes include maternal factors, placental abnormalities,
+        and fetal factors.
+      </dd>
+
+      <dt><b>Interstitial Keratitis</b></dt>
+      <dd>
+        An inflammation of the cornea's middle layer, often caused by
+        infections, autoimmune diseases, or trauma. Symptoms include eye pain,
+        redness, light sensitivity, and blurred vision.
+      </dd>
+
+      <dt><b>Iron Overload Disorders (Hemochromatosis)</b></dt>
+      <dd>
+        A group of inherited or acquired conditions characterized by excessive
+        accumulation of iron in the body's tissues and organs. Symptoms may
+        include fatigue, joint pain, abdominal pain, and liver dysfunction.
+      </dd>
+
+      <dt><b>Infantile Hemangioma</b></dt>
+      <dd>
+        A common type of benign tumor made up of small blood vessels, typically
+        appearing in infants within the first few weeks of life. Most
+        hemangiomas resolve on their own without treatment, but some may require
+        intervention if they cause complications.
+      </dd>
+
+      <dt><b>Ischemic Colitis</b></dt>
+      <dd>
+        An inflammatory condition of the colon caused by reduced blood flow to
+        the colon, usually due to a blood clot or atherosclerosis of the
+        mesenteric arteries. Symptoms include abdominal pain, bloody diarrhea,
+        and fever.
+      </dd>
+
+      <dt><b>Insulinoma</b></dt>
+      <dd>
+        A rare tumor of the pancreas that produces excessive amounts of insulin,
+        leading to hypoglycemia (low blood sugar levels). Symptoms include
+        sweating, confusion, palpitations, and hunger, which improve with sugar
+        intake.
+      </dd>
+
+      <dt><b>Infective Endocarditis</b></dt>
+      <dd>
+        An infection of the inner lining of the heart chambers and valves,
+        typically caused by bacteria or fungi entering the bloodstream and
+        attaching to damaged heart tissue. Symptoms include fever, fatigue,
+        heart murmur, and sometimes, skin lesions.
+      </dd>
+
+      <dt><b>Intracerebral Hemorrhage</b></dt>
+      <dd>
+        A type of stroke that occurs when a blood vessel ruptures and bleeds
+        into the brain tissue, leading to damage and pressure on surrounding
+        brain structures. Symptoms include sudden severe headache, weakness,
+        numbness, or paralysis on one side of the body, and altered
+        consciousness.
+      </dd>
+
+      <dt><b>Idiopathic Thrombocytopenic Purpura (ITP)</b></dt>
+      <dd>
+        A bleeding disorder characterized by low platelet counts due to
+        immune-mediated destruction of platelets. Symptoms include easy
+        bruising, petechiae (small purple or red spots on the skin), and
+        prolonged bleeding from minor injuries.
+      </dd>
+
+      <dt><b>Inguinal Hernia</b></dt>
+      <dd>
+        A condition in which abdominal contents protrude through the inguinal
+        canal, a passage in the lower abdominal wall. It often presents as a
+        bulge in the groin area and may cause discomfort or pain, especially
+        when coughing or lifting heavy objects.
+      </dd>
+    </dl>    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>

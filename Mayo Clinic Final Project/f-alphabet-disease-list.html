@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with F</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <h1>Diseases Starting with F</h1>
+
+    <dl>
+      <dt><b>Fibromyalgia</b></dt>
+      <dd>
+        A disorder characterized by widespread musculoskeletal pain, fatigue,
+        and tenderness in localized areas.
+      </dd>
+
+      <dt><b>Flu</b></dt>
+      <dd>
+        An infectious respiratory illness caused by influenza viruses,
+        presenting symptoms such as fever, cough, sore throat, muscle aches,
+        fatigue, and headaches.
+      </dd>
+
+      <dt><b>Food Poisoning</b></dt>
+      <dd>
+        An illness caused by consuming contaminated food or water, leading to
+        symptoms like nausea, vomiting, diarrhea, abdominal pain, and fever.
+      </dd>
+
+      <dt><b>Fracture</b></dt>
+      <dd>
+        A broken bone, typically caused by trauma or excessive force, resulting
+        in pain, swelling, bruising, and limited mobility.
+      </dd>
+
+      <dt><b>Fungal Infection</b></dt>
+      <dd>
+        An infection caused by fungi, resulting in symptoms such as itching,
+        redness, inflammation, peeling, or cracking of the skin.
+      </dd>
+
+      <dt><b>Frostbite</b></dt>
+      <dd>
+        A condition caused by exposure to extreme cold, leading to damage of
+        skin and underlying tissues, presenting symptoms like numbness,
+        tingling, discoloration, and pain.
+      </dd>
+
+      <dt><b>Functional Dyspepsia</b></dt>
+      <dd>
+        A chronic disorder of the upper digestive tract, characterized by
+        recurring pain or discomfort in the upper abdomen, bloating, belching,
+        and early satiety, without any evident structural abnormality.
+      </dd>
+
+      <dt><b>Flatulence</b></dt>
+      <dd>
+        Excessive gas accumulation in the digestive system, leading to bloating,
+        abdominal discomfort, belching, and passing of gas.
+      </dd>
+
+      <dt><b>Flea-borne Typhus</b></dt>
+      <dd>
+        An infectious disease transmitted by fleas, caused by bacteria of the
+        genus Rickettsia, presenting symptoms like fever, headache, muscle pain,
+        and rash.
+      </dd>
+
+      <dt><b>Foreign Body Ingestion</b></dt>
+      <dd>
+        The swallowing or inhalation of non-food objects or substances, leading
+        to symptoms such as choking, gagging, pain, difficulty swallowing, and
+        respiratory distress.
+      </dd>
+
+      <dt><b>Fragile X Syndrome</b></dt>
+      <dd>
+        A genetic disorder characterized by intellectual disability,
+        developmental delays, behavioral problems, and certain physical
+        features, caused by the mutation of the FMR1 gene.
+      </dd>
+
+      <dt><b>Fasciitis</b></dt>
+      <dd>
+        Inflammation of the fascia, the connective tissue surrounding muscles,
+        leading to pain, swelling, and limited mobility in the affected area.
+      </dd>
+
+      <dt><b>Fibroids</b></dt>
+      <dd>
+        Non-cancerous growths that develop in the uterus, often causing symptoms
+        such as heavy menstrual bleeding, pelvic pain, frequent urination, and
+        back pain.
+      </dd>
+
+      <dt><b>Fungal Nail Infection</b></dt>
+      <dd>
+        An infection of the nails caused by fungi, resulting in thickened,
+        discolored, brittle, or distorted nails.
+      </dd>
+
+      <dt><b>Fanconi Anemia</b></dt>
+      <dd>
+        A rare genetic disorder characterized by bone marrow failure, leading to
+        decreased production of all types of blood cells, as well as various
+        physical abnormalities.
+      </dd>
+
+      <dt><b>Foix-Alajouanine Syndrome</b></dt>
+      <dd>
+        A rare neurological disorder characterized by progressive paralysis and
+        sensory loss due to spinal cord arteriovenous malformations.
+      </dd>
+
+      <dt><b>Fuchs' Dystrophy</b></dt>
+      <dd>
+        A progressive eye disorder affecting the cornea, leading to vision loss,
+        glare sensitivity, and blurry or distorted vision.
+      </dd>
+
+      <dt><b>Fifth Disease (Erythema Infectiosum)</b></dt>
+      <dd>
+        A viral illness caused by parvovirus B19, characterized by a distinctive
+        rash on the face that resembles a "slapped cheek," as well as fever,
+        headache, and body aches.
+      </dd>
+
+      <dt><b>Facial Palsy (Bell's Palsy)</b></dt>
+      <dd>
+        Weakness or paralysis of the facial muscles, typically on one side of
+        the face, caused by inflammation or compression of the facial nerve,
+        resulting in drooping of the mouth, difficulty closing one eye, and
+        inability to smile symmetrically.
+      </dd>
+
+      <dt><b>Foot-and-Mouth Disease</b></dt>
+      <dd>
+        A highly contagious viral infection common in children, characterized by
+        fever, sore throat, and the development of painful sores in the mouth
+        and on the hands and feet.
+      </dd>
+
+      <dt><b>Fibrous Dysplasia</b></dt>
+      <dd>
+        A bone disorder characterized by the abnormal growth of fibrous tissue
+        within the bones, leading to pain, deformity, and increased risk of
+        fractures.
+      </dd>
+
+      <dt><b>Felty Syndrome</b></dt>
+      <dd>
+        A rare complication of rheumatoid arthritis, characterized by the triad
+        of rheumatoid arthritis, an enlarged spleen (splenomegaly), and a low
+        white blood cell count (neutropenia).
+      </dd>
+
+      <dt><b>Fatty Liver Disease (Non-alcoholic)</b></dt>
+      <dd>
+        A condition characterized by the accumulation of fat in the liver, not
+        due to excessive alcohol consumption, often associated with obesity,
+        insulin resistance, and metabolic syndrome.
+      </dd>
+
+      <dt><b>Focal Segmental Glomerulosclerosis (FSGS)</b></dt>
+      <dd>
+        A kidney disorder characterized by scarring (sclerosis) in specific
+        segments of the kidney's filtering units (glomeruli), leading to
+        proteinuria, edema, hypertension, and progressive loss of kidney
+        function.
+      </dd>
+
+      <dt><b>Fungal Meningitis</b></dt>
+      <dd>
+        An infection of the meninges (the protective membranes covering the
+        brain and spinal cord) caused by fungi, leading to symptoms such as
+        headache, fever, stiff neck, nausea, and vomiting.
+      </dd>
+
+      <dt><b>Frozen Shoulder (Adhesive Capsulitis)</b></dt>
+      <dd>
+        A condition characterized by stiffness, pain, and limited range of
+        motion in the shoulder joint, often resulting from inflammation and
+        thickening of the shoulder capsule.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

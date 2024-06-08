@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with R</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <center><h1>Diseases Starting with R</h1></center>
+
+  <dl class="disease-list">
+    <dt><b>Rheumatoid Arthritis</b></dt>
+    <dd>
+      A chronic inflammatory disorder affecting many joints, including those
+      in the hands and feet, causing pain, swelling, stiffness, and eventually
+      joint deformity and bone erosion.
+    </dd>
+
+    <dt><b>Rosacea</b></dt>
+    <dd>
+      A common skin condition that causes redness and visible blood vessels in
+      your face. It may also produce small, red, pus-filled bumps.
+    </dd>
+
+    <dt><b>Rickets</b></dt>
+    <dd>
+      A softening and weakening of bones in children, usually because of an
+      extreme and prolonged vitamin D deficiency, leading to skeletal
+      deformities and growth retardation.
+    </dd>
+
+    <dt><b>Raynaud's Disease</b></dt>
+    <dd>
+      A condition causing some areas of the body — such as fingers and toes —
+      to feel numb and cold in response to cold temperatures or stress.
+    </dd>
+
+    <dt><b>Ringworm</b></dt>
+    <dd>
+      A fungal infection of the skin characterized by a red, circular rash
+      with clearer skin in the middle. It can cause itching, redness, and
+      scaling.
+    </dd>
+
+    <dt><b>Rheumatic Fever</b></dt>
+    <dd>
+      An inflammatory disease that can develop as a complication of untreated
+      strep throat or scarlet fever. It affects the heart, joints, skin, and
+      brain.
+    </dd>
+
+    <dt><b>Rubella</b></dt>
+    <dd>
+      Also known as German measles, it is a contagious viral infection
+      characterized by a distinctive red rash. Symptoms include fever, sore
+      throat, and swollen glands.
+    </dd>
+
+    <dt><b>Restless Legs Syndrome (RLS)</b></dt>
+    <dd>
+      A neurological disorder characterized by an uncontrollable urge to move
+      the legs, usually due to uncomfortable sensations such as creeping,
+      itching, or pulling.
+    </dd>
+
+    <dt><b>Reactive Arthritis</b></dt>
+    <dd>
+      An inflammatory type of arthritis that occurs as a reaction to an
+      infection in another part of the body. It typically affects joints,
+      eyes, and urinary tract.
+    </dd>
+
+    <dt><b>Renal Failure</b></dt>
+    <dd>
+      The condition where the kidneys fail to adequately filter waste products
+      from the blood. It can be acute or chronic, leading to a buildup of
+      toxins in the body.
+    </dd>
+
+    <dt><b>Respiratory Syncytial Virus (RSV) Infection</b></dt>
+    <dd>
+      A common respiratory virus that causes cold-like symptoms but can be
+      severe, especially in infants and older adults. It can lead to
+      bronchiolitis or pneumonia.
+    </dd>
+
+    <dt><b>Reye's Syndrome</b></dt>
+    <dd>
+      A rare but serious condition that causes swelling in the liver and
+      brain. It often occurs in children recovering from a viral infection,
+      especially after taking aspirin.
+    </dd>
+
+    <dt><b>Rocky Mountain Spotted Fever</b></dt>
+    <dd>
+      A bacterial infection transmitted through the bite of an infected tick.
+      Symptoms include fever, headache, rash, and muscle aches.
+    </dd>
+
+    <dt><b>Retinoblastoma</b></dt>
+    <dd>
+      A rare childhood cancer that develops in the retina of the eye. Symptoms
+      may include a white glow in the eye, eye redness, and vision problems.
+    </dd>
+
+    <dt><b>Rhabdomyolysis</b></dt>
+    <dd>
+      A serious syndrome resulting from the breakdown of skeletal muscle
+      fibers, releasing their contents into the bloodstream. It can lead to
+      kidney damage and other complications.
+    </dd>
+
+    <dt><b>Reflux Esophagitis</b></dt>
+    <dd>
+      Inflammation of the esophagus caused by the backward flow of stomach
+      acid into the esophagus. Symptoms include heartburn, chest pain, and
+      difficulty swallowing.
+    </dd>
+
+    <dt><b>Recurrent Aphthous Stomatitis (Canker Sores)</b></dt>
+    <dd>
+      Painful sores or ulcers that develop on the inside of the mouth, usually
+      on the tongue, cheeks, or soft palate. The cause is often unknown but
+      may be related to immune system problems, stress, or certain foods.
+    </dd>
+
+    <dt><b>Renal Cell Carcinoma</b></dt>
+    <dd>
+      The most common type of kidney cancer, originating in the lining of the
+      proximal convoluted tubule. Symptoms may include blood in the urine,
+      back pain, and weight loss.
+    </dd>
+
+    <dt><b>Rheumatic Heart Disease</b></dt>
+    <dd>
+      A condition where damage to the heart valves occurs as a complication of
+      rheumatic fever. It can lead to heart failure, stroke, and other
+      complications.
+    </dd>
+
+    <dt><b>Reactive Hypoglycemia</b></dt>
+    <dd>
+      A condition characterized by low blood sugar (hypoglycemia) that occurs
+      after eating, usually within a few hours. Symptoms may include hunger,
+      shakiness, sweating, and confusion.
+    </dd>
+
+    <dt><b>Refractive Errors</b></dt>
+    <dd>
+      Common vision problems caused by the shape of the eye preventing light
+      from focusing directly on the retina. Types include nearsightedness
+      (myopia), farsightedness (hyperopia), and astigmatism.
+    </dd>
+
+    <dt><b>Recurrent Respiratory Papillomatosis</b></dt>
+    <dd>
+      A rare viral infection that causes wart-like growths in the respiratory
+      tract, usually in the larynx or vocal cords. It can cause voice changes,
+      breathing problems, and recurrent infections.
+    </dd>
+
+    <dt><b>Reiter's Syndrome</b></dt>
+    <dd>
+      An autoimmune condition that typically affects the joints, eyes,
+      urethra, and skin. It may follow a bacterial infection and is
+      characterized by arthritis, eye inflammation, and urinary symptoms.
+    </dd>
+
+    <dt><b>Respiratory Failure</b></dt>
+    <dd>
+      A condition where the lungs fail to adequately exchange oxygen and
+      carbon dioxide, leading to dangerously low levels of oxygen in the
+      blood. It can be acute or chronic.
+    </dd>
+
+    <dt><b>Retinal Detachment</b></dt>
+    <dd>
+      A medical emergency where the retina pulls away from its normal position
+      at the back of the eye. Symptoms include sudden flashes of light,
+      floaters, and a curtain-like shadow over your field of vision.
+    </dd>
+
+    <dt><b>Reactive Lymphadenopathy</b></dt>
+    <dd>
+      Enlargement of lymph nodes in response to an infection, inflammation, or
+      cancer elsewhere in the body. It can cause swelling and tenderness in
+      the affected lymph nodes.
+    </dd>
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

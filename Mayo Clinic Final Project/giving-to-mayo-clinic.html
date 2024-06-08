@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Payment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .NavLinks {
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 104px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin: 0 1rem;
+        padding: 30px 0;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #007bff;
+      }
+
+      .logo {
+        height: 55px;
+        width: 65px;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .form-group button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .form-group button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"
+              ><img
+                id="logo"
+                class="logo"
+                src="./Assets/mayo-clinic-logo.svg"
+                alt="Mayo Clinic Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">Care at Mayo Clinic</a>
+          </li>
+          <li>
+            <a href="./health-library.html">Health Library</a>
+          </li>
+          <li>
+            <a href="./for-medical-professionals.html"
+              >For Medical Professionals</a
+            >
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">Giving to Mayo Clinic</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h1>Make a Payment</h1>
+      <div class="form-group" id="upiIdInput" style="display: none">
+        <label for="upiId">Enter your UPI VPA ID:</label>
+        <input
+          type="text"
+          id="upiId"
+          placeholder="Enter your UPI VPA ID..."
+          required
+        />
+        <button onclick="payWithUPI()">Proceed</button><br />
+      </div>
+      <div class="form-group">
+        <button onclick="toggleUPIInput()">UPI VPA</button>
+        <button onclick="showQRCode()">QR Code</button>
+      </div>
+      <div id="qrCode" style="display: none">
+        <img src="./Assets/frame.png" alt="QR Code" width="200" />
+        <p>Scan the QR code to make the payment.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleUPIInput() {
+        var upiIdInput = document.getElementById("upiIdInput");
+        if (upiIdInput.style.display === "none") {
+          upiIdInput.style.display = "block";
+        } else {
+          upiIdInput.style.display = "none";
+        }
+      }
+
+      function payWithUPI() {
+        var upiId = document.getElementById("upiId").value.trim();
+        if (!upiId) {
+          alert("Please enter your UPI VPA ID.");
+          return;
+        }
+        alert(
+          "Please continue on your UPI Application of choice for further payment"
+        );
+      }
+
+      function showQRCode() {
+        var upiIdInput = document.getElementById("upiIdInput");
+        if (upiIdInput.style.display === "block") {
+          upiIdInput.style.display = "none";
+        }
+        document.getElementById("qrCode").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

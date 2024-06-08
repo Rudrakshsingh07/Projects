@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with P</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    /><script src="./script.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <h1>Diseases Starting with P</h1>
+
+    <dl>
+      <dt>Pneumonia</dt>
+      <dd>
+        <p>
+          A respiratory infection that inflames the air sacs in one or both
+          lungs. Symptoms include cough, fever, chills, and difficulty
+          breathing.
+        </p>
+      </dd>
+
+      <dt>Polio</dt>
+      <dd>
+        <p>
+          A highly infectious viral disease that primarily affects young
+          children. Symptoms can range from fever and headache to paralysis.
+        </p>
+      </dd>
+
+      <dt>Parkinson's Disease</dt>
+      <dd>
+        <p>
+          A progressive nervous system disorder that affects movement. Symptoms
+          include tremors, stiffness, and difficulty with balance and
+          coordination.
+        </p>
+      </dd>
+
+      <dt>Psoriasis</dt>
+      <dd>
+        <p>
+          A chronic autoimmune condition that causes rapid skin cell growth,
+          resulting in red, scaly patches of skin. Symptoms may include itching,
+          burning, and soreness.
+        </p>
+      </dd>
+
+      <dt>Pancreatitis</dt>
+      <dd>
+        <p>
+          Inflammation of the pancreas that can be acute or chronic. Symptoms
+          include severe abdominal pain, nausea, vomiting, and fever.
+        </p>
+      </dd>
+
+      <dt>Peptic Ulcer Disease</dt>
+      <dd>
+        <p>
+          A sore that develops on the lining of the stomach, small intestine, or
+          esophagus. Symptoms include abdominal pain, bloating, and heartburn.
+        </p>
+      </dd>
+
+      <dt>Prostate Cancer</dt>
+      <dd>
+        <p>
+          Cancer that develops in the prostate gland in men. Symptoms may
+          include difficulty urinating, blood in the urine, and erectile
+          dysfunction.
+        </p>
+      </dd>
+
+      <dt>Pulmonary Embolism</dt>
+      <dd>
+        <p>
+          A blockage in one of the pulmonary arteries in the lungs, usually
+          caused by a blood clot. Symptoms include shortness of breath, chest
+          pain, and coughing up blood.
+        </p>
+      </dd>
+
+      <dt>Pulmonary Hypertension</dt>
+      <dd>
+        <p>
+          A type of high blood pressure that affects the arteries in the lungs
+          and the right side of the heart. Symptoms include shortness of breath,
+          fatigue, and chest pain.
+        </p>
+      </dd>
+
+      <dt>Pancreatic Cancer</dt>
+      <dd>
+        <p>
+          Cancer that develops in the tissues of the pancreas. Symptoms may
+          include abdominal or back pain, weight loss, and jaundice.
+        </p>
+      </dd>
+
+      <dt>Progeria</dt>
+      <dd>
+        <p>
+          A rare genetic condition that causes rapid aging in children. Symptoms
+          include growth failure, loss of body fat and hair, and a
+          characteristic facial appearance.
+        </p>
+      </dd>
+
+      <dt>Porphyria</dt>
+      <dd>
+        <p>
+          A group of rare genetic disorders that affect the body's ability to
+          produce heme, a crucial component of hemoglobin. Symptoms vary but may
+          include abdominal pain, skin sensitivity to sunlight, and neurological
+          symptoms.
+        </p>
+      </dd>
+
+      <dt>Pulmonary Fibrosis</dt>
+      <dd>
+        <p>
+          A progressive lung disease characterized by scarring of the lung
+          tissue. Symptoms include shortness of breath, dry cough, and fatigue.
+        </p>
+      </dd>
+
+      <dt>Polycystic Kidney Disease</dt>
+      <dd>
+        <p>
+          A genetic disorder characterized by the growth of numerous cysts in
+          the kidneys. Symptoms include abdominal pain, high blood pressure, and
+          blood in the urine.
+        </p>
+      </dd>
+
+      <dt>Pleurisy</dt>
+      <dd>
+        <p>
+          Inflammation of the pleura, the membranes surrounding the lungs.
+          Symptoms include sharp chest pain, cough, and difficulty breathing.
+        </p>
+      </dd>
+
+      <dt>Preeclampsia</dt>
+      <dd>
+        <p>
+          A pregnancy complication characterized by high blood pressure and
+          signs of damage to other organ systems, often the kidneys. Symptoms
+          include swelling, headaches, and vision changes.
+        </p>
+      </dd>
+
+      <dt>Periodontal Disease</dt>
+      <dd>
+        <p>
+          A severe gum infection that can damage the soft tissue and bone
+          supporting the teeth. Symptoms include swollen, tender gums, loose
+          teeth, and persistent bad breath.
+        </p>
+      </dd>
+
+      <dt>Polycythemia Vera</dt>
+      <dd>
+        <p>
+          A rare blood disorder characterized by the overproduction of red blood
+          cells by the bone marrow. Symptoms include headache, dizziness, and
+          blurred vision.
+        </p>
+      </dd>
+
+      <dt>Prostatitis</dt>
+      <dd>
+        <p>
+          Inflammation of the prostate gland, often caused by bacterial
+          infection. Symptoms include pain or burning during urination, frequent
+          urination, and pelvic pain.
+        </p>
+      </dd>
+
+      <dt>Peripheral Neuropathy</dt>
+      <dd>
+        <p>
+          A condition that affects the nerves outside of the brain and spinal
+          cord. Symptoms include numbness, tingling, and weakness, often in the
+          hands and feet.
+        </p>
+      </dd>
+
+      <dt>Pulmonary Edema</dt>
+      <dd>
+        <p>
+          Buildup of fluid in the air sacs of the lungs, leading to difficulty
+          breathing. Symptoms include extreme shortness of breath, coughing up
+          frothy pink mucus, and chest pain.
+        </p>
+      </dd>
+
+      <dt>Post-Traumatic Stress Disorder (PTSD)</dt>
+      <dd>
+        <p>
+          A mental health condition triggered by a terrifying event, either
+          experiencing it or witnessing it. Symptoms may include flashbacks,
+          nightmares, and severe anxiety.
+        </p>
+      </dd>
+
+      <dt>Pernicious Anemia</dt>
+      <dd>
+        <p>
+          An autoimmune condition in which the body lacks enough healthy red
+          blood cells due to a deficiency of vitamin B12. Symptoms include
+          fatigue, weakness, and pale or yellowish skin.
+        </p>
+      </dd>
+
+      <dt>Pseudotumor Cerebri</dt>
+      <dd>
+        <p>
+          A condition characterized by increased pressure inside the skull that
+          mimics the symptoms of a brain tumor. Symptoms include headache,
+          vision problems, and ringing in the ears.
+        </p>
+      </dd>
+
+      <dt>Pituitary Tumor</dt>
+      <dd>
+        <p>
+          A growth or abnormality in the pituitary gland, which can cause
+          hormone imbalances. Symptoms depend on the size and location of the
+          tumor but may include headaches, vision problems, and hormonal
+          changes.
+        </p>
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

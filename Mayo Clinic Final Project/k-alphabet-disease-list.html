@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with "K"</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with K</h1></center>
+    <dl>
+      <dt><b>Kidney Stones</b></b></b></dt>
+      <dd>
+        A condition where hard deposits of minerals and salts form in the
+        kidneys, causing severe pain, nausea, and blood in urine.
+      </dd>
+
+      <dt><b>Kingella kingae Infection</b></b></b></dt>
+      <dd>
+        An infection typically affecting children, causing symptoms such as
+        fever, joint pain, swelling, and occasionally skin rash.
+      </dd>
+
+      <dt><b>Klinefelter Syndrome</b></b></b></dt>
+      <dd>
+        A genetic disorder in males characterized by the presence of an extra X
+        chromosome, resulting in infertility, reduced muscle mass, and enlarged
+        breasts.
+      </dd>
+
+      <dt><b>Knee Osteoarthritis</b></b></b></dt>
+      <dd>
+        A degenerative joint disease affecting the knees, causing pain,
+        stiffness, swelling, and decreased range of motion.
+      </dd>
+
+      <dt><b>Kuru</b></b></b></dt>
+      <dd>
+        A rare and fatal neurodegenerative disorder caused by prions, leading to
+        symptoms such as tremors, difficulty walking, and cognitive decline.
+      </dd>
+
+      <dt><b>Kawasaki Disease</b></b></b></dt>
+      <dd>
+        A childhood illness characterized by inflammation of blood vessels,
+        resulting in fever, rash, swollen lymph nodes, and redness in the eyes
+        and mouth.
+      </dd>
+
+      <dt><b>Kleptomania</b></b></b></dt>
+      <dd>
+        A mental health disorder characterized by the inability to resist the
+        urge to steal items, often not needed for personal use or monetary gain.
+      </dd>
+
+      <dt><b>Knee Bursitis</b></b></b></dt>
+      <dd>
+        An inflammation of the bursae (small fluid-filled sacs) around the knee
+        joint, causing pain, swelling, and limited movement.
+      </dd>
+
+      <dt><b>Keratitis</b></b></b></dt>
+      <dd>
+        Inflammation of the cornea, often due to infection, injury, or
+        autoimmune conditions, leading to eye pain, redness, blurred vision, and
+        light sensitivity.
+      </dd>
+
+      <dt><b>Kidney Cancer</b></b></b></dt>
+      <dd>
+        A type of cancer that originates in the kidneys, often presenting
+        symptoms such as blood in urine, abdominal pain, fatigue, and
+        unexplained weight loss.
+      </dd>
+
+      <dt><b>Klebsiella Pneumonia</b></b></b></dt>
+      <dd>
+        An infection of the lungs caused by the bacterium Klebsiella pneumoniae,
+        resulting in symptoms such as fever, cough, chest pain, and difficulty
+        breathing.
+      </dd>
+
+      <dt><b>Klinefelter's Syndrome</b></b></b></dt>
+      <dd>
+        A genetic disorder characterized by the presence of an extra X
+        chromosome in males, leading to infertility, reduced facial and body
+        hair, and gynecomastia (enlarged breasts).
+      </dd>
+
+      <dt><b>Kidney Failure</b></b></b></dt>
+      <dd>
+        A condition in which the kidneys lose their ability to function
+        properly, leading to accumulation of waste products and fluid in the
+        body, causing symptoms such as fatigue, swelling, and decreased urine
+        output.
+      </dd>
+
+      <dt><b>Kawasaki Syndrome</b></b></b></dt>
+      <dd>
+        An acute febrile illness primarily affecting children under the age of
+        five, characterized by fever, rash, swollen lymph nodes, red eyes, and
+        inflammation of the blood vessels.
+      </dd>
+
+      <dt><b>Kalazar</b></b></b></dt>
+      <dd>
+        Also known as visceral leishmaniasis, it is a parasitic disease
+        transmitted by sandflies, causing symptoms such as fever, weight loss,
+        enlargement of the spleen and liver, and anemia.
+      </dd>
+
+      <dt><b>Kernicterus</b></b></b></dt>
+      <dd>
+        A rare but serious condition in newborns characterized by high levels of
+        bilirubin in the blood, leading to yellowing of the skin and eyes
+        (jaundice), and potentially causing brain damage.
+      </dd>
+
+      <dt><b>Kennel Cough</b></b></b></dt>
+      <dd>
+        An infectious respiratory disease in dogs, characterized by a dry,
+        hacking cough, nasal discharge, and occasionally fever.
+      </dd>
+
+      <dt><b>Kawasaki Disease</b></b></b></dt>
+      <dd>
+        An inflammatory disorder primarily affecting children, characterized by
+        fever, rash, swollen lymph nodes, and inflammation of blood vessels
+        throughout the body.
+      </dd>
+
+      <dt><b>Keratoacanthoma</b></b></b></dt>
+      <dd>
+        A rapidly growing skin tumor that typically appears on sun-exposed
+        areas, such as the face, hands, and arms, often resembling a volcano
+        with a central crater.
+      </dd>
+
+      <dt><b>Klippel-Trenaunay Syndrome</b></b></b></dt>
+      <dd>
+        A rare congenital disorder characterized by the abnormal development of
+        blood vessels, soft tissues, and bones, leading to port-wine stains,
+        varicose veins, and limb overgrowth.
+      </dd>
+
+      <dt><b>Kernicterus</b></b></b></dt>
+      <dd>
+        A severe neurological condition resulting from excessive bilirubin
+        levels in the blood, leading to yellow staining of the brain tissue and
+        causing symptoms such as seizures, developmental delays, and
+        intellectual disabilities.
+      </dd>
+
+      <dt><b>Keratoconjunctivitis Sicca</b></b></b></dt>
+      <dd>
+        Also known as dry eye syndrome, it is a chronic condition characterized
+        by inadequate tear production or excessive tear evaporation, leading to
+        symptoms such as eye irritation, redness, and blurred vision.
+      </dd>
+
+      <dt><b>Keratosis Pilaris</b></b></b></dt>
+      <dd>
+        A common skin condition characterized by small, rough bumps on the skin,
+        typically on the upper arms, thighs, buttocks, or cheeks, often
+        resembling goosebumps or chicken skin.
+      </dd>
+
+      <dt><b>Kyphosis</b></b></b></dt>
+      <dd>
+        An abnormal curvature of the spine, causing a hunchback or rounded upper
+        back appearance, often resulting from poor posture, osteoporosis, or
+        congenital spinal abnormalities.
+      </dd>
+
+      <dt><b>Kaposi's Sarcoma</b></b></b></dt>
+      <dd>
+        A type of cancer that develops from the cells that line lymph or blood
+        vessels, often seen in people with weakened immune systems, such as
+        those with HIV/AIDS, presenting as purple or brown lesions on the skin
+        or mucous membranes.
+      </dd>
+
+      <dt><b>Keratoacanthoma</b></b></b></dt>
+      <dd>
+        A rapidly growing skin tumor that often appears as a dome-shaped nodule
+        with a central crater or plug, usually occurring on sun-exposed areas
+        such as the face, neck, or arms.
+      </dd>
+
+      <dt><b>Klinefelter Syndrome</b></b></b></dt>
+      <dd>
+        A genetic disorder characterized by the presence of an extra X
+        chromosome in males, leading to infertility, reduced facial and body
+        hair, and gynecomastia (enlarged breasts).
+      </dd>
+
+      <dt><b>Kawasaki Disease</b></b></b></dt>
+      <dd>
+        An inflammatory disorder primarily affecting children, characterized by
+        fever, rash, swollen lymph nodes, and inflammation of blood vessels
+        throughout the body.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases starting with G</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <h1>Diseases starting with G</h1>
+
+    <dl>
+      <dt><b>Gastritis</b></dt>
+      <dd>
+        A condition characterized by inflammation of the lining of the stomach,
+        leading to symptoms such as abdominal pain, nausea, vomiting, and
+        bloating.
+      </dd>
+
+      <dt><b>Gastroenteritis</b></dt>
+      <dd>
+        An infection or inflammation of the digestive tract, causing symptoms
+        like diarrhea, vomiting, abdominal pain, and fever.
+      </dd>
+
+      <dt><b>Glaucoma</b></dt>
+      <dd>
+        A group of eye conditions that damage the optic nerve, often caused by
+        increased pressure in the eye, leading to vision loss or blindness if
+        untreated.
+      </dd>
+
+      <dt><b>Gout</b></dt>
+      <dd>
+        A type of arthritis characterized by sudden and severe pain, swelling,
+        and redness in the joints, often affecting the big toe.
+      </dd>
+
+      <dt><b>German measles (Rubella)</b></dt>
+      <dd>
+        An infectious viral disease causing a rash and fever, typically
+        affecting children, but can cause serious complications in pregnant
+        women.
+      </dd>
+
+      <dt><b>Gonorrhea</b></dt>
+      <dd>
+        A sexually transmitted infection (STI) caused by the bacterium Neisseria
+        gonorrhoeae, often asymptomatic but can cause symptoms such as pain
+        during urination and unusual discharge.
+      </dd>
+
+      <dt><b>Genital herpes</b></dt>
+      <dd>
+        An STI caused by the herpes simplex virus (HSV) affecting the genitals,
+        characterized by painful sores, blisters, and itching.
+      </dd>
+
+      <dt><b>Gastroesophageal reflux disease (GERD)</b></dt>
+      <dd>
+        A chronic condition where stomach acid flows back into the esophagus,
+        causing heartburn, chest pain, and difficulty swallowing.
+      </dd>
+
+      <dt><b>Guillain-Barré syndrome</b></dt>
+      <dd>
+        A rare neurological disorder where the body's immune system attacks the
+        nerves, leading to weakness, numbness, and tingling, which can progress
+        to paralysis.
+      </dd>
+
+      <dt><b>Gangrene</b></dt>
+      <dd>
+        A serious condition where body tissue dies due to a lack of blood
+        supply, often caused by infection or injury, leading to discoloration,
+        pain, and tissue decay.
+      </dd>
+
+      <dt><b>Glioblastoma</b></dt>
+      <dd>
+        A type of aggressive brain tumor that develops from glial cells, causing
+        symptoms such as headaches, seizures, cognitive decline, and personality
+        changes.
+      </dd>
+
+      <dt><b>Graves' disease</b></dt>
+      <dd>
+        An autoimmune disorder that causes hyperthyroidism, leading to symptoms
+        like weight loss, rapid heartbeat, anxiety, and protruding eyes.
+      </dd>
+
+      <dt><b>Gingivitis</b></dt>
+      <dd>
+        An inflammation of the gums, usually caused by poor oral hygiene,
+        resulting in swollen, red, and bleeding gums.
+      </dd>
+
+      <dt><b>Gastroparesis</b></dt>
+      <dd>
+        A condition where the muscles of the stomach are impaired, leading to
+        delayed emptying of the stomach contents, causing symptoms like nausea,
+        vomiting, bloating, and abdominal pain.
+      </dd>
+
+      <dt><b>Glomerulonephritis</b></dt>
+      <dd>
+        An inflammation of the glomeruli in the kidneys, often caused by
+        autoimmune diseases or infections, leading to symptoms such as blood in
+        urine, proteinuria, and swelling.
+      </dd>
+
+      <dt><b>Galactorrhea</b></dt>
+      <dd>
+        A condition where there is spontaneous flow of milk from the breast
+        unrelated to breastfeeding, often due to hormonal imbalances or
+        medications.
+      </dd>
+
+      <dt><b>Gastroschisis</b></dt>
+      <dd>
+        A birth defect where a baby's intestines protrude through a hole in the
+        abdominal wall, typically to the right of the umbilical cord, requiring
+        surgical repair.
+      </dd>
+
+      <dt><b>Gilbert's syndrome</b></dt>
+      <dd>
+        A benign liver condition where there is a mild increase in bilirubin
+        levels, often asymptomatic but can cause occasional jaundice and
+        fatigue.
+      </dd>
+
+      <dt><b>Graft-versus-host disease (GVHD)</b></dt>
+      <dd>
+        A complication of stem cell or bone marrow transplant where donor immune
+        cells attack the recipient's tissues, leading to skin rash, diarrhea,
+        and liver problems.
+      </dd>
+
+      <dt><b>Gluten sensitivity</b></dt>
+      <dd>
+        An adverse reaction to gluten, a protein found in wheat, barley, and
+        rye, causing symptoms such as abdominal pain, bloating, diarrhea, and
+        fatigue.
+      </dd>
+
+      <dt><b>G6PD deficiency</b></dt>
+      <dd>
+        A genetic condition where the body lacks enough glucose-6-phosphate
+        dehydrogenase enzyme, leading to red blood cell breakdown in response to
+        certain triggers like infections or certain foods or drugs.
+      </dd>
+
+      <dt><b>Glycogen storage disease</b></dt>
+      <dd>
+        A group of rare genetic disorders where the body is unable to break down
+        glycogen properly, leading to abnormal accumulation of glycogen in
+        tissues, causing symptoms depending on the specific type.
+      </dd>
+
+      <dt><b>Gastric ulcer</b></dt>
+      <dd>
+        An open sore that develops on the lining of the stomach, often caused by
+        infection with Helicobacter pylori bacteria, leading to abdominal pain,
+        bloating, and nausea.
+      </dd>
+
+      <dt><b>Glioma</b></dt>
+      <dd>
+        A type of brain tumor that arises from glial cells, causing symptoms
+        such as headaches, seizures, cognitive impairment, and neurological
+        deficits.
+      </dd>
+
+      <dt><b>Glomerulosclerosis</b></dt>
+      <dd>
+        A condition where the glomeruli in the kidneys become scarred and
+        hardened, impairing kidney function and leading to symptoms like
+        proteinuria, high blood pressure, and swelling.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

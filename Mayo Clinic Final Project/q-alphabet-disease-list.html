@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en"><script src="./script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with Q</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with Q</h1></center>
+
+    <dl>
+      <dt><b>1. Quinsy</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Severe sore throat, difficulty swallowing,
+          fever, swollen tonsils.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quinsy, also known as peritonsillar
+          abscess, is a complication of tonsillitis where a collection of pus
+          forms between the tonsil and the throat wall.
+        </p>
+      </dd>
+
+      <dt><b>2. Q fever</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> High fever, headache, muscle pain, cough,
+          fatigue.
+        </p>
+        <p>
+          <strong>Definition:</strong> Q fever is a bacterial infection caused
+          by Coxiella burnetii which can cause acute or chronic illness, usually
+          transmitted to humans from animals.
+        </p>
+      </dd>
+
+      <dt><b>3. Quinine poisoning</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Ringing in the ears (tinnitus), headache,
+          nausea, vomiting, diarrhea, visual disturbances.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quinine poisoning occurs when someone
+          takes too much quinine, a medication used to treat malaria, leading to
+          toxic effects on the body.
+        </p>
+      </dd>
+
+      <dt><b>4. Quiescent lupus erythematosus</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Periods of remission with few or no
+          symptoms, followed by flare-ups of symptoms such as joint pain,
+          fatigue, skin rashes.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quiescent lupus erythematosus refers to a
+          period of inactivity or remission in the symptoms of systemic lupus
+          erythematosus (SLE).
+        </p>
+      </dd>
+
+      <dt><b>5. Qazi-Markouizos syndrome</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Intellectual disability, seizures, speech
+          delay, behavioral problems.
+        </p>
+        <p>
+          <strong>Definition:</strong> Qazi-Markouizos syndrome is a rare
+          genetic disorder characterized by developmental delay, intellectual
+          disability, seizures, and distinctive facial features.
+        </p>
+      </dd>
+
+      <dt><b>6. Qazi-Markouizos-like syndrome</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Intellectual disability, seizures, speech
+          delay, behavioral problems, distinctive facial features.
+        </p>
+        <p>
+          <strong>Definition:</strong> Qazi-Markouizos-like syndrome shares
+          similarities with Qazi-Markouizos syndrome, but the specific genetic
+          cause may be different.
+        </p>
+      </dd>
+
+      <dt><b>7. Qazi–Markouizos syndrome</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Intellectual disability, seizures, speech
+          delay, behavioral problems, distinctive facial features.
+        </p>
+        <p>
+          <strong>Definition:</strong> Qazi-Markouizos syndrome is a rare
+          genetic disorder characterized by developmental delay, intellectual
+          disability, seizures, and distinctive facial features.
+        </p>
+      </dd>
+
+      <dt><b>8. Qazi–Markouizos-like syndrome</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Intellectual disability, seizures, speech
+          delay, behavioral problems, distinctive facial features.
+        </p>
+        <p>
+          <strong>Definition:</strong> Qazi-Markouizos-like syndrome shares
+          similarities with Qazi-Markouizos syndrome, but the specific genetic
+          cause may be different.
+        </p>
+      </dd>
+
+      <dt><b>9. Quetzalcoatlus</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> N/A (This is a genus of pterosaur, not a
+          disease)
+        </p>
+        <p>
+          <strong>Definition:</strong> Quetzalcoatlus is a genus of pterosaur
+          known from the Late Cretaceous period of North America. It was one of
+          the largest known flying animals of all time.
+        </p>
+      </dd>
+
+      <dt><b>10. Quillback</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> N/A (This is a species of fish, not a
+          disease)
+        </p>
+        <p>
+          <strong>Definition:</strong> Quillback is a species of fish native to
+          North America, commonly found in freshwater rivers and lakes.
+        </p>
+      </dd>
+
+      <dt><b>11. Quinism</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Tinnitus, hearing loss, vertigo, headache,
+          nausea, visual disturbances.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quinism refers to the toxic effects
+          caused by exposure to quinoline-containing medications, such as
+          mefloquine or quinine.
+        </p>
+      </dd>
+
+      <dt><b>12. Q fever endocarditis</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Fever, fatigue, night sweats, weight loss,
+          shortness of breath, chest pain.
+        </p>
+        <p>
+          <strong>Definition:</strong> Q fever endocarditis is a complication of
+          Q fever where the infection affects the heart valves, leading to
+          inflammation and damage.
+        </p>
+      </dd>
+
+      <dt><b>13. Quadrantanopia</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Loss of vision in one quarter of the visual
+          field, usually affecting one eye.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quadrantanopia is a type of visual field
+          defect where there is loss of vision in one quarter of the visual
+          field.
+        </p>
+      </dd>
+
+      <dt><b>14. Quadriparesis</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Weakness or partial paralysis affecting all
+          four limbs.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quadriparesis is a condition
+          characterized by weakness or partial paralysis affecting all four
+          limbs.
+        </p>
+      </dd>
+
+      <dt><b>15. Quadriplegia</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Paralysis affecting all four limbs and
+          typically the trunk.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quadriplegia, also known as tetraplegia,
+          is paralysis caused by illness or injury that results in the partial
+          or total loss of use of all four limbs and the torso.
+        </p>
+      </dd>
+
+      <dt><b>16. Quail disease</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> N/A (This is a viral disease affecting
+          quail, not humans)
+        </p>
+        <p>
+          <strong>Definition:</strong> Quail disease, also known as avian
+          leukosis, is a viral disease affecting quail and other poultry.
+        </p>
+      </dd>
+
+      <dt><b>17. Quartz pneumoconiosis</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Cough, shortness of breath, chest
+          tightness, chest pain.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quartz pneumoconiosis, also known as
+          silicosis, is a lung disease caused by inhaling silica dust over a
+          long period, leading to inflammation and scarring of lung tissue.
+        </p>
+      </dd>
+
+      <dt><b>18. Queen's disease</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> N/A (This term might refer to various
+          conditions, not a specific disease)
+        </p>
+        <p>
+          <strong>Definition:</strong> The term "Queen's disease" is not
+          commonly used in medical literature and may refer to different
+          conditions depending on the context.
+        </p>
+      </dd>
+
+      <dt><b>19. Quickening</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Sensation of fetal movements during
+          pregnancy.
+        </p>
+        <p>
+          <strong>Definition:</strong> Quickening is the term used to describe
+          the sensation of fetal movements felt by a pregnant woman, usually
+          starting between 16 to 25 weeks of pregnancy.
+        </p>
+      </dd>
+
+      <dt><b>20. Q-fever meningitis</b></dt>
+      <dd>
+        <p>
+          <strong>Symptoms:</strong> Headache, fever, stiff neck, nausea,
+          vomiting.
+        </p>
+        <p>
+          <strong>Definition:</strong> Q-fever meningitis is a rare complication
+          of Q fever where the infection spreads to the membranes surrounding
+          the brain and spinal cord, causing inflammation.
+        </p>
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

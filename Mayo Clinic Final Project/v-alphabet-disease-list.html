@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en"><script src="./script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with V</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with V</h1></center>
+
+    <dl>
+      <dt><b>Vitamin D Deficiency</b></dt>
+      <dd>
+        A condition caused by insufficient levels of vitamin D in the body,
+        leading to symptoms such as bone pain, muscle weakness, and fatigue.
+      </dd>
+
+      <dt><b>Varicella (Chickenpox)</b></dt>
+      <dd>
+        A highly contagious viral infection characterized by an itchy rash
+        consisting of small, red bumps that eventually develop into fluid-filled
+        blisters.
+      </dd>
+
+      <dt><b>Vasculitis</b></dt>
+      <dd>
+        Inflammation of the blood vessels, which can lead to a variety of
+        symptoms depending on which vessels are affected, including fever,
+        fatigue, weight loss, and organ damage.
+      </dd>
+
+      <dt><b>Vertigo</b></dt>
+      <dd>
+        A sensation of spinning or dizziness, often due to inner ear problems,
+        neurological issues, or certain medications.
+      </dd>
+
+      <dt><b>Viral Hepatitis</b></dt>
+      <dd>
+        Inflammation of the liver caused by a viral infection, with symptoms
+        ranging from mild flu-like symptoms to jaundice, abdominal pain, and
+        liver failure.
+      </dd>
+
+      <dt><b>Ventricular Fibrillation</b></dt>
+      <dd>
+        A life-threatening cardiac arrhythmia characterized by rapid, erratic
+        contractions of the heart's ventricles, leading to loss of consciousness
+        and sudden cardiac arrest.
+      </dd>
+
+      <dt><b>Vitiligo</b></dt>
+      <dd>
+        A skin condition characterized by the loss of skin color in patches,
+        resulting from the destruction of melanocytes, the cells responsible for
+        producing pigment.
+      </dd>
+
+      <dt><b>Von Willebrand Disease</b></dt>
+      <dd>
+        A genetic bleeding disorder caused by deficient or defective von
+        Willebrand factor, a protein that helps blood to clot properly, leading
+        to prolonged bleeding and easy bruising.
+      </dd>
+
+      <dt><b>Varicose Veins</b></dt>
+      <dd>
+        Enlarged, swollen, and twisted veins that usually appear blue or dark
+        purple, often occurring in the legs and causing discomfort, pain, and
+        aching.
+      </dd>
+
+      <dt><b>Vulvovaginitis</b></dt>
+      <dd>
+        Inflammation or infection of the vulva and vagina, typically causing
+        symptoms such as vaginal itching, burning, abnormal discharge, and
+        discomfort during urination or intercourse.
+      </dd>
+
+      <dt><b>Valley Fever</b></dt>
+      <dd>
+        An infectious disease caused by inhaling spores of the fungus
+        Coccidioides, leading to flu-like symptoms such as fever, cough, chest
+        pain, and fatigue.
+      </dd>
+
+      <dt><b>Viral Pneumonia</b></dt>
+      <dd>
+        Pneumonia caused by a viral infection, resulting in inflammation of the
+        lungs and symptoms such as cough, fever, shortness of breath, and
+        fatigue.
+      </dd>
+
+      <dt><b>Victorian Influenza (La Grippe)</b></dt>
+      <dd>
+        Historical term referring to the severe influenza pandemic of 1899-1900,
+        caused by the H3N8 influenza virus, which spread rapidly across the
+        globe, leading to high mortality rates.
+      </dd>
+
+      <dt><b>Vulvar Cancer</b></dt>
+      <dd>
+        Cancer that develops in the vulva, the external female genital organs,
+        often presenting as a lump, ulcer, or abnormal growth on the vulva, with
+        symptoms such as itching, pain, and bleeding.
+      </dd>
+
+      <dt><b>Ventricular Tachycardia</b></dt>
+      <dd>
+        A rapid heart rhythm originating from the heart's ventricles, which can
+        lead to symptoms such as palpitations, dizziness, fainting, and cardiac
+        arrest if left untreated.
+      </dd>
+
+      <dt><b>Vestibular Neuritis</b></dt>
+      <dd>
+        Inflammation of the vestibular nerve, usually caused by a viral
+        infection, resulting in sudden onset of vertigo, nausea, vomiting, and
+        difficulty with balance and coordination.
+      </dd>
+
+      <dt><b>Vaginal Yeast Infection</b></dt>
+      <dd>
+        An overgrowth of the fungus Candida in the vagina, leading to symptoms
+        such as itching, burning, irritation, and abnormal discharge.
+      </dd>
+
+      <dt><b>Valvular Heart Disease</b></dt>
+      <dd>
+        Heart disease affecting one or more of the heart valves, causing
+        symptoms such as chest pain, shortness of breath, fatigue, and
+        palpitations.
+      </dd>
+
+      <dt><b>Vitamin B12 Deficiency</b></dt>
+      <dd>
+        A condition caused by inadequate levels of vitamin B12 in the body,
+        leading to symptoms such as fatigue, weakness, pale or jaundiced skin,
+        and neurological problems.
+      </dd>
+
+      <dt><b>Vitamin K Deficiency</b></dt>
+      <dd>
+        A deficiency of vitamin K, a key nutrient necessary for blood clotting,
+        leading to increased risk of bleeding and easy bruising.
+      </dd>
+
+      <dt><b>Vascular Dementia</b></dt>
+      <dd>
+        A decline in cognitive function caused by impaired blood flow to the
+        brain, resulting in memory loss, confusion, difficulty with language and
+        reasoning, and other symptoms of dementia.
+      </dd>
+
+      <dt><b>Visceral Leishmaniasis (Kala-Azar)</b></dt>
+      <dd>
+        A serious parasitic disease caused by infection with the protozoa
+        Leishmania, leading to symptoms such as fever, weight loss, enlarged
+        spleen and liver, and anemia.
+      </dd>
+
+      <dt><b>Variegate Porphyria</b></dt>
+      <dd>
+        A rare genetic disorder characterized by a deficiency of the enzyme
+        responsible for heme production, leading to symptoms such as abdominal
+        pain, skin sensitivity to light, neurological problems, and psychiatric
+        disturbances.
+      </dd>
+
+      <dt><b>Vector-Borne Diseases</b></dt>
+      <dd>
+        Diseases transmitted to humans through the bites of infected vectors
+        such as mosquitoes, ticks, and fleas, including malaria, dengue fever,
+        Lyme disease, and Zika virus infection.
+      </dd>
+
+      <dt><b>Visual Impairment</b></dt>
+      <dd>
+        A broad term encompassing various degrees of vision loss or impairment,
+        ranging from partial to total blindness, caused by conditions such as
+        refractive errors, cataracts, glaucoma, and age-related macular
+        degeneration.
+      </dd>
+
+      <dt><b>Vulvar Vestibulitis Syndrome</b></dt>
+      <dd>
+        A chronic pain disorder characterized by pain and discomfort in the
+        vestibular area of the vulva, often triggered by touch or pressure,
+        leading to dyspareunia (painful intercourse) and decreased sexual
+        function.
+      </dd>
+
+      <dt><b>Vanishing White Matter Disease</b></dt>
+      <dd>
+        A rare genetic disorder affecting the brain's white matter, leading to
+        neurological symptoms such as developmental regression, movement
+        abnormalities, seizures, and progressive loss of motor and cognitive
+        function.
+      </dd>
+
+      <dt><b>Vaginal Atrophy</b></dt>
+      <dd>
+        Thinning, drying, and inflammation of the vaginal walls due to decreased
+        estrogen levels, often occurring after menopause, leading to symptoms
+        such as vaginal dryness, itching, burning, and pain during intercourse.
+      </dd>
+
+      <dt><b>Vogt-Koyanagi-Harada Syndrome</b></dt>
+      <dd>
+        An autoimmune disorder affecting the eyes, skin, and other organs,
+        characterized by bilateral uveitis (inflammation of the uvea), skin
+        pigment changes, hair loss, and neurologic symptoms.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with Y</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <center><h1>Diseases Starting with Y</h1></center>
+
+  <dl>
+    <dt><b>Yellow Fever</b></dt>
+    <dd>
+      Symptoms: Fever, muscle pain, headache, jaundice, vomiting, and fatigue.
+    </dd>
+    <dd>
+      Definition: A viral hemorrhagic fever transmitted by infected
+      mosquitoes, causing fever and jaundice, and frequently fatal if severe.
+    </dd>
+
+    <dt><b>Yersinia enterocolitica Infection</b></dt>
+    <dd>Symptoms: Fever, abdominal pain, diarrhea, nausea, and vomiting.</dd>
+    <dd>
+      Definition: A bacterial infection caused by Yersinia enterocolitica,
+      often resulting in gastrointestinal symptoms.
+    </dd>
+
+    <dt><b>Yaws</b></dt>
+    <dd>Symptoms: Skin lesions, bone and joint pain, swollen lymph nodes.</dd>
+    <dd>
+      Definition: A chronic bacterial infection caused by Treponema pallidum
+      subspecies pertenue, transmitted by direct contact with infectious
+      lesions.
+    </dd>
+
+    <dt><b>Yersiniosis</b></dt>
+    <dd>
+      Symptoms: Diarrhea, fever, abdominal pain, vomiting, and occasionally, a
+      rash.
+    </dd>
+    <dd>
+      Definition: An infection caused by bacteria of the genus Yersinia,
+      typically transmitted through contaminated food or water.
+    </dd>
+
+    <dt><b>Yersinia pestis Infection (Plague)</b></dt>
+    <dd>
+      Symptoms: Fever, chills, weakness, swollen and painful lymph nodes,
+      shortness of breath, cough.
+    </dd>
+    <dd>
+      Definition: A serious bacterial infection caused by Yersinia pestis,
+      usually spread through fleas from rodents.
+    </dd>
+
+    <dt><b>Yellow Nail Syndrome</b></dt>
+    <dd>
+      Symptoms: Yellowish discoloration of nails, lymphedema (swelling),
+      respiratory symptoms.
+    </dd>
+    <dd>
+      Definition: A rare disorder characterized by yellow nails, respiratory
+      problems, and lymphedema.
+    </dd>
+
+    <dt><b>Yolk Sac Tumor</b></dt>
+    <dd>Symptoms: Abdominal swelling or mass, pain, fever, weight loss.</dd>
+    <dd>
+      Definition: A rare malignant tumor that primarily occurs in children,
+      arising from germ cells in the yolk sac of the embryo.
+    </dd>
+
+    <dt><b>Yaba Monkey Tumor Virus (YMTV) Infection</b></dt>
+    <dd>
+      Symptoms: Swelling and formation of tumors, fever, respiratory symptoms.
+    </dd>
+    <dd>
+      Definition: A virus belonging to the herpesvirus family, causing tumors
+      in monkeys.
+    </dd>
+
+    <dt><b>Yellow Nail Syndrome</b></dt>
+    <dd>
+      Symptoms: Yellowish discoloration of nails, lymphedema (swelling),
+      respiratory symptoms.
+    </dd>
+    <dd>
+      Definition: A rare disorder characterized by yellow nails, respiratory
+      problems, and lymphedema.
+    </dd>
+
+    <dt><b>Yaba Monkey Tumor Virus (YMTV) Infection</b></dt>
+    <dd>
+      Symptoms: Swelling and formation of tumors, fever, respiratory symptoms.
+    </dd>
+    <dd>
+      Definition: A virus belonging to the herpesvirus family, causing tumors
+      in monkeys.
+    </dd>
+
+    <dt><b>Yersiniosis</b></dt>
+    <dd>
+      Symptoms: Diarrhea, fever, abdominal pain, vomiting, and occasionally, a
+      rash.
+    </dd>
+    <dd>
+      Definition: An infection caused by bacteria of the genus Yersinia,
+      typically transmitted through contaminated food or water.
+    </dd>
+
+    <dt><b>Yaws</b></dt>
+    <dd>Symptoms: Skin lesions, bone and joint pain, swollen lymph nodes.</dd>
+    <dd>
+      Definition: A chronic bacterial infection caused by Treponema pallidum
+      subspecies pertenue, transmitted by direct contact with infectious
+      lesions.
+    </dd>
+
+    <dt><b>Yersinia enterocolitica Infection</b></dt>
+    <dd>Symptoms: Fever, abdominal pain, diarrhea, nausea, and vomiting.</dd>
+    <dd>
+      Definition: A bacterial infection caused by Yersinia enterocolitica,
+      often resulting in gastrointestinal symptoms.
+    </dd>
+
+    <dt><b>Yellow Fever</b></dt>
+    <dd>
+      Symptoms: Fever, muscle pain, headache, jaundice, vomiting, and fatigue.
+    </dd>
+    <dd>
+      Definition: A viral hemorrhagic fever transmitted by infected
+      mosquitoes, causing fever and jaundice, and frequently fatal if severe.
+    </dd>
+
+    <dt><b>Yaws</b></dt>
+    <dd>Symptoms: Skin lesions, bone and joint pain, swollen lymph nodes.</dd>
+    <dd>
+      Definition: A chronic bacterial infection caused by Treponema pallidum
+      subspecies pertenue, transmitted by direct contact with infectious
+      lesions.
+    </dd>
+
+    <dt><b>Yersinia pestis Infection (Plague)</b></dt>
+    <dd>
+      Symptoms: Fever, chills, weakness, swollen and painful lymph nodes,
+      shortness of breath, cough.
+    </dd>
+    <dd>
+      Definition: A serious bacterial infection caused by Yersinia pestis,
+      usually spread through fleas from rodents.
+    </dd>
+
+    <dt><b>Yersiniosis</b></dt>
+    <dd>
+      Symptoms: Diarrhea, fever, abdominal pain, vomiting, and occasionally, a
+      rash.
+    </dd>
+    <dd>
+      Definition: An infection caused by bacteria of the genus Yersinia,
+      typically transmitted through contaminated food or water.
+    </dd>
+
+    <dt><b>Yellow Nail Syndrome</b></dt>
+    <dd>
+      Symptoms: Yellowish discoloration of nails, lymphedema (swelling),
+      respiratory symptoms.
+    </dd>
+    <dd>
+      Definition: A rare disorder characterized by yellow nails, respiratory
+      problems, and lymphedema.
+    </dd>
+
+    <dt><b>Yolk Sac Tumor</b></dt>
+    <dd>Symptoms: Abdominal swelling or mass, pain, fever, weight loss.</dd>
+    <dd>
+      Definition: A rare malignant tumor that primarily occurs in children,
+      arising from germ cells in the yolk sac of the embryo.
+    </dd>
+
+    <dt><b>Yaba Monkey Tumor Virus (YMTV) Infection</b></dt>
+    <dd>
+      Symptoms: Swelling and formation of tumors, fever, respiratory symptoms.
+    </dd>
+    <dd>
+      Definition: A virus belonging to the herpesvirus family, causing tumors
+      in monkeys.
+    </dd>
+
+    <!-- Add more diseases and their details here -->
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

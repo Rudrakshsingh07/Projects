@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with T</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <center><h1>Diseases Starting with T</h1></center>
+
+  <dl>
+    <dt><b>Tuberculosis</b></dt>
+    <dd>
+      A bacterial infection that primarily affects the lungs, causing
+      coughing, chest pain, and bloody sputum.
+    </dd>
+
+    <dt><b>Tetanus</b></dt>
+    <dd>
+      A bacterial infection that leads to muscle stiffness and spasms, often
+      starting in the jaw (lockjaw).
+    </dd>
+
+    <dt><b>Thyroid Disorders</b></dt>
+    <dd>
+      Conditions affecting the thyroid gland, including hyperthyroidism
+      (overactive thyroid) and hypothyroidism (underactive thyroid), leading
+      to various symptoms such as weight changes, fatigue, and mood swings.
+    </dd>
+
+    <dt><b>Tonsillitis</b></dt>
+    <dd>
+      Inflammation of the tonsils, causing sore throat, difficulty swallowing,
+      and fever.
+    </dd>
+
+    <dt><b>Trichomoniasis</b></dt>
+    <dd>
+      A sexually transmitted infection caused by a parasite, resulting in
+      vaginal discharge, genital itching, and discomfort during urination.
+    </dd>
+
+    <dt><b>Tourette Syndrome</b></dt>
+    <dd>
+      A neurological disorder characterized by repetitive, involuntary
+      movements and vocalizations called tics.
+    </dd>
+
+    <dt><b>Testicular Cancer</b></dt>
+    <dd>
+      Cancer that develops in the testicles, often presenting as a painless
+      lump, swelling, or discomfort in the testicular area.
+    </dd>
+
+    <dt><b>Thalassemia</b></dt>
+    <dd>
+      A genetic blood disorder that affects the production of hemoglobin,
+      leading to anemia, fatigue, and other complications.
+    </dd>
+
+    <dt><b>Tinea Versicolor</b></dt>
+    <dd>
+      A fungal skin infection that causes patches of discolored skin, usually
+      on the chest, back, and shoulders.
+    </dd>
+
+    <dt><b>Temporal Arteritis</b></dt>
+    <dd>
+      Also known as giant cell arteritis, it is a condition characterized by
+      inflammation of the arteries, particularly those in the temples, leading
+      to headaches, jaw pain, and vision problems.
+    </dd>
+
+    <dt><b>Trigeminal Neuralgia</b></dt>
+    <dd>
+      A chronic pain condition affecting the trigeminal nerve, causing sudden,
+      severe facial pain, often triggered by simple actions like chewing or
+      talking.
+    </dd>
+
+    <dt><b>Transient Ischemic Attack (TIA)</b></dt>
+    <dd>
+      Often referred to as a mini-stroke, TIA is a temporary disruption of
+      blood flow to the brain, resulting in stroke-like symptoms such as
+      weakness, numbness, or difficulty speaking that typically resolve within
+      24 hours.
+    </dd>
+
+    <dt><b>Tubular Breast Cancer</b></dt>
+    <dd>
+      A subtype of breast cancer that starts in the milk ducts and grows in a
+      linear or tubular pattern, often presenting as a small, firm lump in the
+      breast.
+    </dd>
+
+    <dt><b>Tetralogy of Fallot</b></dt>
+    <dd>
+      A congenital heart defect characterized by four structural abnormalities
+      in the heart, leading to symptoms such as cyanosis (bluish skin),
+      shortness of breath, and poor growth in infants.
+    </dd>
+
+    <dt><b>Tropical Sprue</b></dt>
+    <dd>
+      A gastrointestinal disorder characterized by chronic diarrhea,
+      malabsorption of nutrients, and deficiencies in vitamins and minerals,
+      often seen in tropical regions.
+    </dd>
+
+    <dt><b>Takayasu's Arteritis</b></dt>
+    <dd>
+      A rare type of vasculitis that primarily affects the large arteries,
+      causing inflammation, narrowing, and potentially leading to symptoms
+      such as fatigue, muscle pain, and vision changes.
+    </dd>
+
+    <dt><b>Toxoplasmosis</b></dt>
+    <dd>
+      An infection caused by the Toxoplasma gondii parasite, often contracted
+      from contaminated food or cat feces, leading to flu-like symptoms and
+      potentially severe complications in pregnant women and individuals with
+      weakened immune systems.
+    </dd>
+
+    <dt><b>Tay-Sachs Disease</b></dt>
+    <dd>
+      A rare genetic disorder characterized by the absence of a vital enzyme,
+      leading to the progressive destruction of nerve cells in the brain and
+      spinal cord, resulting in developmental regression, seizures, and
+      eventually death.
+    </dd>
+
+    <dt><b>Transient Global Amnesia</b></dt>
+    <dd>
+      A sudden, temporary loss of memory function, often characterized by the
+      inability to form new memories or recall recent events, with the
+      individual retaining their identity and cognitive abilities.
+    </dd>
+
+    <dt><b>Trench Mouth (Acute Necrotizing Ulcerative Gingivitis)</b></dt>
+    <dd>
+      An infection of the gums caused by bacteria, often associated with poor
+      oral hygiene, leading to severe gum pain, bleeding, and foul breath.
+    </dd>
+
+    <dt><b>Thrombocytopenia</b></dt>
+    <dd>
+      A condition characterized by a low platelet count in the blood, leading
+      to an increased risk of bleeding and bruising.
+    </dd>
+
+    <dt><b>Tularemia</b></dt>
+    <dd>
+      A rare infectious disease caused by the bacterium Francisella
+      tularensis, often transmitted through contact with infected animals or
+      insect bites, leading to flu-like symptoms, swollen lymph nodes, and
+      potentially severe complications if untreated.
+    </dd>
+
+    <dt><b>Transverse Myelitis</b></dt>
+    <dd>
+      An inflammation of the spinal cord, leading to symptoms such as
+      weakness, numbness, and loss of bladder or bowel control.
+    </dd>
+
+    <dt><b>Trachoma</b></dt>
+    <dd>
+      An infectious eye disease caused by the bacterium Chlamydia trachomatis,
+      leading to inflammation of the inner eyelid, scarring, and potentially
+      blindness if left untreated.
+    </dd>
+
+    <dt><b>Tubulointerstitial Nephritis</b></dt>
+    <dd>
+      An inflammation of the kidney tubules and surrounding tissue, often
+      caused by medications, infections, or autoimmune disorders, leading to
+      symptoms such as kidney dysfunction, blood in the urine, and fluid
+      retention.
+    </dd>
+
+    <dt><b>Temporal Lobe Epilepsy</b></dt>
+    <dd>
+      A type of epilepsy characterized by recurrent seizures originating from
+      the temporal lobes of the brain, often accompanied by altered
+      consciousness, memory disturbances, and unusual sensations or emotions.
+    </dd>
+
+    <dt><b>Tinea Capitis</b></dt>
+    <dd>
+      A fungal infection of the scalp, causing itching, redness, and scaling,
+      often leading to hair loss and the formation of patches of baldness.
+    </dd>
+
+    <dt><b>Transposition of the Great Arteries</b></dt>
+    <dd>
+      A congenital heart defect where the positions of the pulmonary artery
+      and the aorta are switched, leading to abnormal blood flow and
+      potentially life-threatening complications in newborns.
+    </dd>
+
+    <dt><b>Thoracic Outlet Syndrome</b></dt>
+    <dd>
+      A group of disorders resulting from compression of the nerves or blood
+      vessels in the thoracic outlet area, leading to symptoms such as pain,
+      numbness, and weakness in the neck, shoulder, and arm.
+    </dd>
+
+    <dt><b>Tumor Lysis Syndrome</b></dt>
+    <dd>
+      A potentially life-threatening complication that can occur as a result
+      of cancer treatment, where the rapid breakdown of cancer cells releases
+      large amounts of potassium, phosphorus, and uric acid into the
+      bloodstream, leading to electrolyte imbalances and kidney failure.
+    </dd>
+
+    <dt><b>Transmissible Spongiform Encephalopathy</b></dt>
+    <dd>
+      A group of rare neurodegenerative diseases caused by abnormal proteins
+      called prions, leading to progressive brain damage, cognitive decline,
+      and eventually death.
+    </dd>
+
+    <dt><b>Tropical Pulmonary Eosinophilia</b></dt>
+    <dd>
+      A rare complication of parasitic infections such as filariasis,
+      characterized by inflammation and excess eosinophils in the lungs,
+      leading to symptoms such as cough, wheezing, and difficulty breathing.
+    </dd>
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

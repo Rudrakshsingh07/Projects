@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with M</title>
+    <link
+      rel="stylesheet"
+      href="./style.css  "
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+    <div class="container">
+      <h1>Diseases Starting with M</h1>
+      <ul class="disease-list">
+        <li>
+          <h2>Malaria</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Malaria is a mosquito-borne infectious disease caused by
+              Plasmodium parasites. It is transmitted through the bite of
+              infected Anopheles mosquitoes.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Fever, chills, sweats, headache, nausea, vomiting, muscle pain.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Multiple Sclerosis</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Multiple sclerosis (MS) is a chronic autoimmune disease that
+              affects the central nervous system (brain and spinal cord).
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Weakness or numbness in one or more limbs, electric shock
+              sensations with certain neck movements, tremors, lack of
+              coordination.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Measles</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Measles is a highly contagious viral infection caused by the
+              measles virus.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Fever, cough, runny nose, red eyes, rash that starts on the face
+              and spreads to the body.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Migraine</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Migraine is a neurological condition characterized by recurrent
+              headaches that can be moderate to severe. Migraine attacks may
+              also be accompanied by other symptoms such as nausea, vomiting,
+              and sensitivity to light and sound.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Throbbing or pulsating pain on one side of the head, sensitivity
+              to light and sound, nausea, vomiting.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Myocardial Infarction</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Myocardial infarction (MI), commonly known as a heart attack,
+              occurs when blood flow to a part of the heart is blocked for a
+              long enough time that part of the heart muscle is damaged or dies.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Chest pain or discomfort, shortness of breath, nausea,
+              lightheadedness, sweating.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Mumps</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Mumps is a contagious viral infection that primarily affects the
+              salivary glands, resulting in swelling and pain.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Swelling and pain in one or both parotid glands (located on the
+              sides of the face), fever, headache, muscle aches.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Macular Degeneration</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Macular degeneration is an eye disease that causes progressive
+              damage to the macula, a small area in the retina responsible for
+              central vision.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Blurred or distorted vision, dark or empty areas in central
+              vision, difficulty seeing details.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Menopause</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Menopause is a natural biological process that marks the end of
+              menstruation and fertility in women.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Irregular periods, hot flashes, night sweats, mood swings, vaginal
+              dryness.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Melanoma</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Melanoma is a type of skin cancer that develops from the
+              pigment-producing cells known as melanocytes.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Irregularly shaped moles or spots on the skin, changes in the
+              size, shape, or color of existing moles, itching or bleeding.
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h2>Meningitis</h2>
+          <dl>
+            <dt><b>Definition:</b></dt>
+            <dd>
+              Meningitis is an inflammation of the meninges, the protective
+              membranes covering the brain and spinal cord, usually caused by an
+              infection.
+            </dd>
+            <dt><b>Symptoms:</b></dt>
+            <dd>
+              Sudden onset of fever, headache, stiff neck, nausea, vomiting,
+              sensitivity to light, confusion.
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en"><script src="./script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with X</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with X</h1></center>
+
+    <dl>
+      <dt><b>Xeroderma pigmentosum</b></dt>
+      <dd>
+        A genetic disorder characterized by extreme sensitivity to ultraviolet
+        (UV) rays from sunlight, resulting in sunburn, skin cancer, and other
+        skin abnormalities.
+      </dd>
+
+      <dt><b>Xerophthalmia</b></dt>
+      <dd>
+        A condition caused by vitamin A deficiency, leading to dryness of the
+        conjunctiva and cornea of the eyes, night blindness, and ultimately
+        blindness if left untreated.
+      </dd>
+
+      <dt><b>Xerosis</b></dt>
+      <dd>
+        The medical term for dry skin, often characterized by itching, flaking,
+        and cracking.
+      </dd>
+
+      <dt><b>X-linked agammaglobulinemia</b></dt>
+      <dd>
+        An inherited disorder characterized by a lack of mature B cells, leading
+        to a weakened immune system and recurrent infections.
+      </dd>
+
+      <dt><b>Xanthelasma</b></dt>
+      <dd>
+        Yellowish plaques that develop on the eyelids, typically near the inner
+        canthus, often associated with elevated levels of cholesterol and other
+        lipids.
+      </dd>
+
+      <dt><b>Xanthogranulomatous pyelonephritis</b></dt>
+      <dd>
+        An uncommon, severe form of kidney infection characterized by the
+        formation of yellowish nodules, typically due to chronic urinary tract
+        obstruction and infection.
+      </dd>
+
+      <dt><b>Xanthoma</b></dt>
+      <dd>
+        Yellowish deposits of cholesterol underneath the skin, often appearing
+        as nodules or plaques, commonly associated with lipid disorders.
+      </dd>
+
+      <dt><b>Xenophobia</b></dt>
+      <dd>
+        A psychological condition characterized by an irrational fear or hatred
+        of strangers, foreigners, or people from different cultures.
+      </dd>
+
+      <dt><b>Xerostomia</b></dt>
+      <dd>
+        Commonly known as dry mouth, it is a condition characterized by a lack
+        of saliva production, leading to discomfort, difficulty swallowing, and
+        an increased risk of dental problems.
+      </dd>
+
+      <dt><b>Xerotic eczema</b></dt>
+      <dd>
+        A type of eczema characterized by extremely dry, itchy, and cracked
+        skin, often exacerbated by environmental factors such as low humidity
+        and harsh soaps.
+      </dd>
+
+      <dt><b>X-linked hypophosphatemia</b></dt>
+      <dd>
+        A hereditary disorder characterized by low levels of phosphate in the
+        blood, leading to weakened bones, bone pain, skeletal deformities, and
+        an increased risk of fractures.
+      </dd>
+
+      <dt><b>Xylitol poisoning</b></dt>
+      <dd>
+        A condition caused by ingestion of xylitol, a sugar substitute commonly
+        found in sugar-free gum and other products, leading to low blood sugar,
+        seizures, liver failure, and potentially death in dogs.
+      </dd>
+
+      <dt><b>Xenotropic murine leukemia virus-related virus (XMRV)</b></dt>
+      <dd>
+        A retrovirus initially thought to be associated with prostate cancer and
+        chronic fatigue syndrome, though subsequent research has questioned its
+        pathogenicity in humans.
+      </dd>
+
+      <dt><b>Xerosis cutis</b></dt>
+      <dd>
+        Another term for dry skin, characterized by rough, scaly, or cracked
+        skin due to loss of moisture.
+      </dd>
+
+      <dt><b>Xenon poisoning</b></dt>
+      <dd>
+        A rare condition caused by exposure to excessive levels of xenon gas,
+        leading to symptoms such as dizziness, nausea, vomiting, confusion, and
+        in severe cases, respiratory failure and death.
+      </dd>
+
+      <dt><b>Xerophytic</b></dt>
+      <dd>
+        Referring to plants adapted to dry environments, characterized by
+        features such as thick waxy coatings, reduced leaf surface area, and
+        specialized root systems for water storage.
+      </dd>
+
+      <dt><b>Xerophagy</b></dt>
+      <dd>
+        The practice of eating only dry food, often as a religious or ascetic
+        discipline.
+      </dd>
+
+      <dt><b>Xerogel</b></dt>
+      <dd>
+        A highly porous material with a dry, gel-like consistency, used in
+        various applications including as a desiccant, catalyst support, and in
+        drug delivery systems.
+      </dd>
+
+      <dt><b>Xanthoderma</b></dt>
+      <dd>
+        A yellow discoloration of the skin, often associated with liver disease,
+        jaundice, or certain medications.
+      </dd>
+
+      <dt><b>Xenogeneic</b></dt>
+      <dd>
+        Referring to tissues, organs, or cells transplanted between different
+        species, such as from animals to humans.
+      </dd>
+
+      <dt><b>Xenobiotic</b></dt>
+      <dd>
+        A chemical substance not naturally produced or expected to be found in
+        the body, often referring to drugs, environmental pollutants, or other
+        foreign compounds.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

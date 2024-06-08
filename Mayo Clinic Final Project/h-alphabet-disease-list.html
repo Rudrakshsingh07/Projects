@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with H</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <div class="container">
+    <center><h1>Diseases Starting with H</h1></center>
+    <ul class="disease-list">
+      <li>
+        <h2>Hepatitis</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hepatitis is an inflammation of the liver, most commonly caused by
+            a viral infection.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Fatigue, nausea, vomiting, abdominal pain, jaundice.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypertension</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypertension, or high blood pressure, is a long-term medical
+            condition in which the blood pressure in the arteries is
+            persistently elevated.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Often asymptomatic, but may include headaches, shortness of
+            breath, and nosebleeds.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Heart Disease</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Heart disease refers to several types of heart conditions,
+            including coronary artery disease, heart rhythm problems
+            (arrhythmias), and heart defects present at birth (congenital
+            heart defects).
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Chest pain or discomfort, shortness of breath, fatigue, irregular
+            heartbeats.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>HIV/AIDS</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            HIV (human immunodeficiency virus) weakens the immune system by
+            destroying important cells that fight disease and infection. AIDS
+            (acquired immunodeficiency syndrome) is the most advanced stage of
+            HIV infection.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Fever, fatigue, swollen lymph nodes, weight loss, night sweats.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hemorrhoids</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hemorrhoids are swollen veins in the lowest part of your rectum
+            and anus. Sometimes the walls of these blood vessels stretch so
+            thin that the veins bulge and get irritated, especially when you
+            poop.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Bleeding during bowel movements, itching or irritation in the anal
+            region, pain or discomfort.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypothyroidism</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypothyroidism is a condition in which your thyroid gland doesn't
+            produce enough of certain crucial hormones.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Fatigue, weight gain, constipation, dry skin, depression.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Huntington's Disease</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Huntington's disease is a progressive brain disorder that causes
+            uncontrolled movements, emotional problems, and loss of thinking
+            ability (cognition).
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Chorea (involuntary jerking or writhing movements), changes in
+            personality, difficulty with motor skills.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hyperthyroidism</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hyperthyroidism is a condition in which your thyroid gland
+            produces too much of the hormone thyroxine.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Weight loss, rapid heartbeat, sweating, nervousness, irritability.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypoglycemia</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypoglycemia is a condition characterized by an abnormally low
+            level of blood sugar (glucose), usually below 70 mg/dl.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Shakiness, dizziness, sweating, hunger, irritability.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hemophilia</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hemophilia is a rare disorder in which your blood doesn't clot
+            normally because it lacks sufficient blood-clotting proteins
+            (clotting factors).
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Excessive bleeding and easy bruising, prolonged bleeding from cuts
+            or injuries, joint pain and swelling.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hidradenitis Suppurativa</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hidradenitis suppurativa is a chronic skin condition characterized
+            by clusters of abscesses or subcutaneous boil-like "nodules" that
+            develop in areas of the body where skin rubs together, such as the
+            armpits, groin, buttocks, and under the breasts.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Painful lumps under the skin, pus-filled lesions, scarring.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hand, Foot, and Mouth Disease</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hand, foot, and mouth disease is a highly contagious viral
+            infection that's common in young children. It causes sores in the
+            mouth and a rash on the hands and feet.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Fever, sore throat, blisters on hands, feet, and inside the mouth.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Herpes</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Herpes is a viral infection caused by the herpes simplex virus
+            (HSV). There are two types of herpes: HSV-1 (oral herpes) and
+            HSV-2 (genital herpes).
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Painful sores, blisters, itching, burning, flu-like symptoms.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypercholesterolemia</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypercholesterolemia is a condition characterized by high levels
+            of cholesterol in the blood. It's often caused by unhealthy
+            lifestyle choices, such as poor diet and lack of exercise.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Often asymptomatic, but can lead to cardiovascular diseases such
+            as heart attacks and strokes.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypochondria</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypochondria, also known as illness anxiety disorder, is a mental
+            health condition characterized by excessive worry about having a
+            serious illness.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Preoccupation with having a serious illness despite medical
+            reassurance, frequent doctor visits, excessive health-related
+            internet searches.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hyperhidrosis</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hyperhidrosis is a medical condition characterized by excessive
+            sweating beyond what is necessary to regulate body temperature.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Excessive sweating, particularly in the palms, soles, armpits, or
+            face.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypertrophic Cardiomyopathy</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypertrophic cardiomyopathy (HCM) is a disease in which the heart
+            muscle (myocardium) becomes abnormally thick (hypertrophied).
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Shortness of breath, chest pain, palpitations, dizziness,
+            fainting.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hemochromatosis</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hemochromatosis is a genetic disorder in which the body absorbs
+            too much iron from the diet. The excess iron is stored in the
+            body's tissues and organs, where it can cause damage.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Fatigue, joint pain, abdominal pain, liver problems.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hashimoto's Disease</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hashimoto's disease is an autoimmune disorder that causes
+            inflammation of the thyroid gland, leading to hypothyroidism.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Fatigue, weight gain, sensitivity to cold, dry skin, constipation.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypoparathyroidism</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypoparathyroidism is a rare condition in which the parathyroid
+            glands fail to produce sufficient parathyroid hormone (PTH).
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Muscle cramps, tingling or burning sensation in the hands and
+            feet, fatigue, dry skin, hair loss.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypothermia</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypothermia occurs when your body loses heat faster than it can
+            produce heat, causing a dangerously low body temperature.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Shivering, confusion, slurred speech, drowsiness, shallow
+            breathing.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hyperemesis Gravidarum</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hyperemesis gravidarum is a severe form of nausea and vomiting
+            during pregnancy that can lead to dehydration, weight loss, and
+            electrolyte imbalances.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Persistent nausea and vomiting, dehydration, weight loss.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hypoxia</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hypoxia is a condition in which the body or a region of the body
+            is deprived of adequate oxygen supply at the tissue level.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Shortness of breath, rapid breathing, confusion, blue skin or
+            lips.
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hyponatremia</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hyponatremia is a condition characterized by low levels of sodium
+            in the blood.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>Nausea, headache, confusion, seizures, coma.</dd>
+        </dl>
+      </li>
+      <li>
+        <h2>Hepatorenal Syndrome</h2>
+        <dl>
+          <dt><b>Definition:</b></dt>
+          <dd>
+            Hepatorenal syndrome is a type of kidney failure that occurs as a
+            complication of severe liver disease.
+          </dd>
+          <dt><b>Symptoms:</b></dt>
+          <dd>
+            Decreased urine output, fluid retention, confusion, jaundice.
+          </dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

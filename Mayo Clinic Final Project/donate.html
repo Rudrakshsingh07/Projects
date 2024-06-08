@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Payment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .form-group button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .form-group button:hover {
+        background-color: #0056b3;
+      }
+      nav {
+        color: #fff; /* Sets the text color of the navigation */
+        padding: 0; /* Removes default padding */
+        display: flex; /* Displays as flexbox */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        height: 104px; /* Sets the height of the navigation */
+      }
+
+      nav ul {
+        list-style-type: none; /* Removes bullet points from the list */
+        margin: 0; /* Removes default margin */
+        padding: 0; /* Removes default padding */
+        display: flex; /* Displays as flexbox */
+        justify-content: center; /* Centers content horizontally */
+      }
+
+      nav li {
+        margin-right: 1rem; /* Adds right margin between list items */
+        padding: 30px; /* Adds padding inside list items */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Make a Payment</h1>
+      <div class="form-group" id="upiIdInput" style="display: none">
+        <label for="upiId">Enter your UPI VPA ID:</label>
+        <input
+          type="text"
+          id="upiId"
+          placeholder="Enter your UPI VPA ID..."
+          required
+        />
+        <button onclick="payWithUPI()">Proceed</button><br />
+      </div>
+      <div class="form-group">
+        <button onclick="toggleUPIInput()">UPI VPA</button>
+        <button onclick="showQRCode()">QR Code</button>
+      </div>
+      <div id="qrCode" style="display: none">
+        <img src="./Assets/frame.png" alt="QR Code" width="200" />
+        <p>Scan the QR code to make the payment.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleUPIInput() {
+        var upiIdInput = document.getElementById("upiIdInput");
+        if (upiIdInput.style.display === "none") {
+          upiIdInput.style.display = "block";
+        } else {
+          upiIdInput.style.display = "none";
+        }
+      }
+
+      function payWithUPI() {
+        var upiId = document.getElementById("upiId").value.trim();
+        if (!upiId) {
+          alert("Please enter your UPI VPA ID.");
+          return;
+        }
+        alert(
+          "Please continue on your UPI Application of choice for further payment"
+        );
+      }
+
+      function showQRCode() {
+        var upiIdInput = document.getElementById("upiIdInput");
+        if (upiIdInput.style.display === "block") {
+          upiIdInput.style.display = "none";
+        }
+        document.getElementById("qrCode").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

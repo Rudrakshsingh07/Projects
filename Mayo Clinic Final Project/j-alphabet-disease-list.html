@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease Names and Symptoms</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openADiseaseListPage()"
+            >
+              A
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openBDiseaseListPage()"
+            >
+              B
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openCDiseaseListPage()"
+            >
+              C
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openDDiseaseListPage()"
+            >
+              D
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openEDiseaseListPage()"
+            >
+              E
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openFDiseaseListPage()"
+            >
+              F
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openGDiseaseListPage()"
+            >
+              G
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openHDiseaseListPage()"
+            >
+              H
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openIDiseaseListPage()"
+            >
+              I
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openJDiseaseListPage()"
+            >
+              J
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openKDiseaseListPage()"
+            >
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openLDiseaseListPage()"
+            >
+              L
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openMDiseaseListPage()"
+            >
+              M
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openNDiseaseListPage()"
+            >
+              N
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openODiseaseListPage()"
+            >
+              O
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openPDiseaseListPage()"
+            >
+              P
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openQDiseaseListPage()"
+            >
+              Q
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openRDiseaseListPage()"
+            >
+              R
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openSDiseaseListPage()"
+            >
+              S
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openTDiseaseListPage()"
+            >
+              T
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openUDiseaseListPage()"
+            >
+              U
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openVDiseaseListPage()"
+            >
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openWDiseaseListPage()"
+            >
+              W
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openXDiseaseListPage()"
+            >
+              X
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openYDiseaseListPage()"
+            >
+              Y
+            </button>
+          </td>
+          <td>
+            <button
+              class="find-disease-alphabets"
+              onclick="openZDiseaseListPage()"
+            >
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <body>
+    <center><h1>Diseases Starting with J</h1></center>
+    <dl>
+      <dt><b>Juvenile Arthritis</b></dt>
+      <dd>
+        A form of arthritis that affects individuals under the age of 16.
+        Symptoms include joint pain, stiffness, and swelling.
+      </dd>
+
+      <dt><b>Jaundice</b></dt>
+      <dd>
+        A condition characterized by yellowing of the skin and eyes due to high
+        levels of bilirubin in the blood. Symptoms also include fatigue,
+        abdominal pain, and dark urine.
+      </dd>
+
+      <dt><b>Juvenile Diabetes (Type 1 Diabetes)</b></dt>
+      <dd>
+        A chronic condition where the pancreas produces little to no insulin.
+        Symptoms include increased thirst, frequent urination, fatigue, and
+        weight loss.
+      </dd>
+
+      <dt><b>Jock Itch</b></dt>
+      <dd>
+        A fungal infection of the skin in the groin area. Symptoms include
+        itching, redness, and a rash.
+      </dd>
+
+      <dt><b>Johne's Disease</b></dt>
+      <dd>
+        A chronic bacterial infection that primarily affects the intestines of
+        cattle, sheep, and goats. Symptoms include weight loss, diarrhea, and
+        decreased milk production.
+      </dd>
+
+      <dt><b>Japanese Encephalitis</b></dt>
+      <dd>
+        A viral infection transmitted by mosquitoes, leading to inflammation of
+        the brain. Symptoms include fever, headache, neck stiffness,
+        disorientation, and seizures.
+      </dd>
+
+      <dt><b>Junctional Epidermolysis Bullosa</b></dt>
+      <dd>
+        A rare genetic disorder characterized by fragile skin that blisters and
+        tears easily. Symptoms include blistering of the skin, scarring, and
+        deformities of the nails and teeth.
+      </dd>
+
+      <dt><b>Juvenile Idiopathic Arthritis (JIA)</b></dt>
+      <dd>
+        A chronic autoimmune disease in children characterized by joint
+        inflammation. Symptoms include joint pain, swelling, stiffness, and
+        fever.
+      </dd>
+
+      <dt><b>Jet Lag</b></dt>
+      <dd>
+        A temporary sleep disorder that occurs when a person's internal body
+        clock is out of sync with the time zone they are in. Symptoms include
+        fatigue, insomnia, irritability, and difficulty concentrating.
+      </dd>
+
+      <dt><b>Jakob-Creutzfeldt Disease (CJD)</b></dt>
+      <dd>
+        A rare, degenerative, and fatal brain disorder caused by abnormal prion
+        proteins. Symptoms include rapidly progressive dementia, muscle
+        stiffness, involuntary movements, and eventually coma.
+      </dd>
+
+      <dt><b>Jellyfish Sting</b></dt>
+      <dd>
+        An injury caused by the venomous tentacles of jellyfish. Symptoms
+        include intense pain, redness, swelling, itching, and in severe cases,
+        difficulty breathing and cardiac arrest.
+      </dd>
+
+      <dt><b>Juvenile Myoclonic Epilepsy</b></dt>
+      <dd>
+        A type of epilepsy characterized by brief, involuntary muscle jerks or
+        twitches, particularly upon waking. Symptoms also include absence
+        seizures and generalized tonic-clonic seizures.
+      </dd>
+
+      <dt><b>Juvenile Huntington's Disease</b></dt>
+      <dd>
+        A rare form of Huntington's disease that manifests in childhood or
+        adolescence. Symptoms include movement abnormalities, cognitive decline,
+        and psychiatric disturbances.
+      </dd>
+
+      <dt><b>Juvenile Nasopharyngeal Angiofibroma (JNA)</b></dt>
+      <dd>
+        A benign tumor that typically arises in the nasopharynx of adolescent
+        males. Symptoms include nasal congestion, epistaxis (nosebleeds), facial
+        swelling, and visual disturbances.
+      </dd>
+
+      <dt><b>Juvenile Rheumatoid Arthritis (JRA)</b></dt>
+      <dd>
+        An autoimmune disease affecting children under the age of 16,
+        characterized by joint inflammation. Symptoms include joint pain,
+        swelling, stiffness, and fever.
+      </dd>
+
+      <dt><b>Jacobsen Syndrome</b></dt>
+      <dd>
+        A rare chromosomal disorder caused by deletion of genetic material from
+        chromosome 11. Symptoms vary widely but may include intellectual
+        disability, distinctive facial features, heart defects, and
+        developmental delays.
+      </dd>
+
+      <dt><b>Job Syndrome (Hyper-IgE Syndrome)</b></dt>
+      <dd>
+        A rare genetic disorder characterized by recurrent infections, eczema,
+        and elevated levels of immunoglobulin E (IgE). Symptoms also include
+        skin abscesses, recurrent pneumonia, and skeletal abnormalities.
+      </dd>
+
+      <dt><b>Juvenile Spondyloarthritis</b></dt>
+      <dd>
+        A type of arthritis that affects children and adolescents, primarily
+        involving inflammation of the spine and joints. Symptoms include back
+        pain, stiffness, and reduced range of motion.
+      </dd>
+
+      <dt><b>Juvenile Myelomonocytic Leukemia (JMML)</b></dt>
+      <dd>
+        A rare form of leukemia that primarily affects young children. Symptoms
+        include anemia, easy bruising or bleeding, frequent infections, and
+        swollen lymph nodes.
+      </dd>
+
+      <dt><b>Juvenile Polyposis Syndrome</b></dt>
+      <dd>
+        A rare genetic disorder characterized by the growth of multiple polyps
+        in the gastrointestinal tract. Symptoms include rectal bleeding,
+        abdominal pain, diarrhea, and anemia.
+      </dd>
+
+      <dt><b>Juvenile Pilocytic Astrocytoma</b></dt>
+      <dd>
+        A type of brain tumor that typically occurs in children and adolescents.
+        Symptoms vary depending on the location of the tumor but may include
+        headaches, nausea, vomiting, and seizures.
+      </dd>
+
+      <dt><b>Jones Fracture</b></dt>
+      <dd>
+        A fracture of the fifth metatarsal bone in the foot. Symptoms include
+        pain, swelling, bruising, and difficulty bearing weight on the affected
+        foot.
+      </dd>
+
+      <dt><b>Jervell and Lange-Nielsen Syndrome (JLNS)</b></dt>
+      <dd>
+        A rare genetic disorder characterized by a prolonged QT interval on
+        electrocardiogram (ECG), leading to an increased risk of
+        life-threatening cardiac arrhythmias. Symptoms include fainting,
+        seizures, and sudden cardiac arrest.
+      </dd>
+
+      <dt><b>Junctional Rhythm</b></dt>
+      <dd>
+        An abnormal heart rhythm originating in the atrioventricular (AV)
+        junction. Symptoms may include palpitations, dizziness, lightheadedness,
+        and syncope (fainting).
+      </dd>
+
+      <dt><b>Japanese B Encephalitis</b></dt>
+      <dd>
+        A viral infection transmitted by mosquitoes, leading to inflammation of
+        the brain. Symptoms include fever, headache, neck stiffness,
+        disorientation, and seizures.
+      </dd>
+
+      <dt><b>Juvenile Paget's Disease</b></dt>
+      <dd>
+        A rare genetic disorder characterized by accelerated bone turnover,
+        leading to bone pain, fractures, and deformities. Symptoms may also
+        include hearing loss and neurological complications.
+      </dd>
+
+      <dt><b>Juvenile Polyarteritis</b></dt>
+      <dd>
+        An autoimmune vasculitis affecting children and adolescents, involving
+        inflammation of small and medium-sized blood vessels. Symptoms include
+        fever, fatigue, weight loss, joint pain, and skin rash.
+      </dd>
+
+      <dt><b>Junctional Ectopic Tachycardia</b></dt>
+      <dd>
+        An abnormal heart rhythm characterized by rapid heartbeats originating
+        in the atrioventricular (AV) junction. Symptoms may include
+        palpitations, chest pain, dizziness, and fainting.
+      </dd>
+
+      <dt><b>Jalili Syndrome</b></dt>
+      <dd>
+        A rare genetic disorder characterized by cone-rod dystrophy (a type of
+        vision impairment) and amelogenesis imperfecta (abnormal development of
+        tooth enamel). Symptoms also include nystagmus and photophobia.
+      </dd>
+
+      <dt><b>Juvenile Temporal Arteritis</b></dt>
+      <dd>
+        An inflammatory disease affecting the temporal arteries in children and
+        adolescents. Symptoms include headache, scalp tenderness, jaw pain, and
+        vision problems.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

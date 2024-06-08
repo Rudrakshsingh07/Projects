@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with "N"</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+    <input type="search" placeholder="Search diseases and conditions" />
+  </div>
+  <br />
+
+  <center><h1>Diseases Starting with "N"</h1></center>
+
+  <dl>
+    <dt><b>Narcolepsy</b></dt>
+    <dd>
+      A chronic sleep disorder characterized by overwhelming daytime
+      drowsiness and sudden attacks of sleep.
+    </dd>
+
+    <dt><b>Nephritis</b></dt>
+    <dd>
+      Inflammation of the kidneys, typically caused by an infection or
+      autoimmune reaction.
+    </dd>
+
+    <dt><b>Neuralgia</b></dt>
+    <dd>
+      Intense, stabbing, or burning pain along the course of a nerve, often
+      caused by irritation or damage to the nerve.
+    </dd>
+
+    <dt><b>Neurofibromatosis</b></dt>
+    <dd>
+      A genetic disorder that causes tumors to form on nerve tissue, leading
+      to various complications.
+    </dd>
+
+    <dt><b>Neutropenia</b></dt>
+    <dd>
+      A condition characterized by an abnormally low level of neutrophils, a
+      type of white blood cell important for fighting infections.
+    </dd>
+
+    <dt><b>Night blindness</b></dt>
+    <dd>
+      A condition in which a person has difficulty seeing in low light or
+      darkness, often due to a deficiency in vitamin A.
+    </dd>
+
+    <dt><b>Nystagmus</b></dt>
+    <dd>
+      Repetitive, uncontrolled eye movements that may result in reduced vision
+      and depth perception.
+    </dd>
+
+    <dt><b>Nasal polyps</b></dt>
+    <dd>
+      Noncancerous growths that develop in the lining of the nasal passages or
+      sinuses, often causing congestion and a reduced sense of smell.
+    </dd>
+
+    <dt><b>Necrotizing fasciitis</b></dt>
+    <dd>
+      A serious bacterial infection that destroys tissue under the skin, often
+      referred to as flesh-eating disease.
+    </dd>
+
+    <dt><b>Nephrolithiasis</b></dt>
+    <dd>
+      The formation of kidney stones, which are hard deposits of minerals and
+      salts that can cause severe pain.
+    </dd>
+
+    <dt><b>Niemann-Pick disease</b></dt>
+    <dd>
+      A group of rare inherited disorders that involve the abnormal
+      accumulation of lipids in cells, leading to various symptoms depending
+      on the specific type.
+    </dd>
+
+    <dt><b>Non-Hodgkin lymphoma</b></dt>
+    <dd>
+      A type of cancer that originates in the lymphatic system, involving
+      abnormal growth of white blood cells called lymphocytes.
+    </dd>
+
+    <dt><b>Necrotizing enterocolitis</b></dt>
+    <dd>
+      A serious condition that primarily affects premature infants,
+      characterized by inflammation and death of tissue in the intestines.
+    </dd>
+
+    <dt><b>Nephrotic syndrome</b></dt>
+    <dd>
+      A kidney disorder characterized by the presence of excessive protein in
+      the urine, low levels of protein in the blood, and swelling.
+    </dd>
+
+    <dt><b>Nasopharyngeal cancer</b></dt>
+    <dd>
+      A type of cancer that develops in the nasopharynx, the upper part of the
+      throat behind the nose.
+    </dd>
+
+    <dt><b>Neonatal jaundice</b></dt>
+    <dd>
+      A condition in newborns characterized by yellowing of the skin and eyes
+      due to elevated levels of bilirubin in the blood.
+    </dd>
+
+    <dt><b>Nephrogenic diabetes insipidus</b></dt>
+    <dd>
+      A kidney disorder that causes excessive thirst and urination due to the
+      inability of the kidneys to concentrate urine.
+    </dd>
+
+    <dt><b>Neuroblastoma</b></dt>
+    <dd>
+      A type of cancer that develops in immature nerve cells, usually
+      occurring in the adrenal glands, abdomen, chest, or spinal cord.
+    </dd>
+
+    <dt><b>Niemann-Pick disease</b></dt>
+    <dd>
+      A group of rare inherited disorders that involve the abnormal
+      accumulation of lipids in cells, leading to various symptoms depending
+      on the specific type.
+    </dd>
+
+    <dt><b>Neurogenic bladder</b></dt>
+    <dd>
+      A dysfunction of the urinary bladder due to damage to the nerves that
+      control bladder function, leading to problems with urination.
+    </dd>
+
+    <dt><b>Neurosyphilis</b></dt>
+    <dd>
+      An infection of the central nervous system caused by the bacterium
+      Treponema pallidum, which can occur at any stage of syphilis infection.
+    </dd>
+
+    <dt><b>Niemann-Pick disease</b></dt>
+    <dd>
+      A group of rare inherited disorders that involve the abnormal
+      accumulation of lipids in cells, leading to various symptoms depending
+      on the specific type.
+    </dd>
+
+    <dt><b>Nocardiosis</b></dt>
+    <dd>
+      An infectious disease caused by bacteria of the genus Nocardia, which
+      typically affects the lungs but can spread to other parts of the body.
+    </dd>
+
+    <dt><b>Norovirus infection</b></dt>
+    <dd>
+      A highly contagious viral infection that causes gastroenteritis, with
+      symptoms including diarrhea, vomiting, and stomach cramps.
+    </dd>
+
+    <dt><b>Nasal congestion</b></dt>
+    <dd>
+      Blockage or obstruction of the nasal passages, often resulting in
+      difficulty breathing through the nose.
+    </dd>
+
+    <dt><b>Neonatal respiratory distress syndrome</b></dt>
+    <dd>
+      A breathing disorder that affects newborns, especially premature
+      infants, due to immature lungs and inadequate surfactant production.
+    </dd>
+
+    <dt><b>Neurocysticercosis</b></dt>
+    <dd>
+      A parasitic infection of the central nervous system caused by the larval
+      stage of the pork tapeworm, resulting in various neurological symptoms.
+    </dd>
+
+    <dt><b>Necrotizing pneumonia</b></dt>
+    <dd>
+      A severe form of pneumonia characterized by necrosis of lung tissue,
+      often caused by aggressive bacteria such as Staphylococcus aureus.
+    </dd>
+
+    <dt><b>Night sweats</b></dt>
+    <dd>
+      Episodes of excessive sweating during sleep, often associated with
+      underlying medical conditions such as infections or hormonal disorders.
+    </dd>
+
+    <dt><b>Nasopharyngitis</b></dt>
+    <dd>
+      Inflammation of the nasal passages and pharynx, commonly known as the
+      common cold.
+    </dd>
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

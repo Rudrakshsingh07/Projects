@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseases Starting with B</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Replace with the actual font family */
+    }
+
+    .header {
+      background: linear-gradient(to right,
+          #0074d9,
+          #3d9970);
+      /* Replace with actual color codes */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .alphabet-search {
+      margin-top: 20px;
+    }
+
+    .alphabet-search button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="NavLinks">
+    <nav>
+      <ul>
+        <li>
+          <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+          
+        </li>
+        <li>
+          <a href="./why-choose-mayo-clinic.html">
+            <h4>Care at Mayo Clinic</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./health-library.html">
+            <h4>Health Library</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./for-medical-peofessionals.html">
+            <h4>For Medical Professionals</h4>
+          </a>
+        </li>
+        <li>
+          <a href="./giving-to-mayo-clinic.html">
+            <h4>Giving to Mayo Clinic</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <div class="title">Diseases & Conditions</div>
+    <div class="subtitle">
+      Easy-to-understand answers about diseases and conditions
+    </div>
+    <div class="alphabet-search">
+      <table>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openADiseaseListPage()">
+              A
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openBDiseaseListPage()">
+              B
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openCDiseaseListPage()">
+              C
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openDDiseaseListPage()">
+              D
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openEDiseaseListPage()">
+              E
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openFDiseaseListPage()">
+              F
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openGDiseaseListPage()">
+              G
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openHDiseaseListPage()">
+              H
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openIDiseaseListPage()">
+              I
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openJDiseaseListPage()">
+              J
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openKDiseaseListPage()">
+              K
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openLDiseaseListPage()">
+              L
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openMDiseaseListPage()">
+              M
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openNDiseaseListPage()">
+              N
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openODiseaseListPage()">
+              O
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openPDiseaseListPage()">
+              P
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openQDiseaseListPage()">
+              Q
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openRDiseaseListPage()">
+              R
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openSDiseaseListPage()">
+              S
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openTDiseaseListPage()">
+              T
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openUDiseaseListPage()">
+              U
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openVDiseaseListPage()">
+              V
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="find-disease-alphabets" onclick="openWDiseaseListPage()">
+              W
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openXDiseaseListPage()">
+              X
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openYDiseaseListPage()">
+              Y
+            </button>
+          </td>
+          <td>
+            <button class="find-disease-alphabets" onclick="openZDiseaseListPage()">
+              Z
+            </button>
+          </td>
+        </tr>
+      </table>
+      <!-- Add other alphabet buttons here -->
+    </div>
+  </div>
+  <br />
+<center>  <h1>Diseases Starting with B</h1></center>
+  <dl>
+    <dt><b><b>Bacterial pneumonia</b></b><dt>
+    <dd>
+      A type of pneumonia caused by bacterial infection. Symptoms include
+      cough, fever, difficulty breathing, and chest pain.
+    </dd>
+
+    <dt><b><b>Bronchitis</b></b><dt>
+    <dd>
+      An inflammation of the lining of the bronchial tubes, often due to
+      infection. Symptoms include cough, chest discomfort, and difficulty
+      breathing.
+    </dd>
+
+    <dt><b><b>Brucellosis</b></b><dt>
+    <dd>
+      A bacterial infection transmitted from animals to humans, typically
+      through consumption of contaminated food products. Symptoms include
+      fever, muscle pain, and fatigue.
+    </dd>
+
+    <dt><b><b>Bursitis</b></b><dt>
+    <dd>
+      An inflammation of the bursae, small fluid-filled sacs that cushion the
+      joints. Symptoms include pain, swelling, and limited range of motion in
+      the affected joint.
+    </dd>
+
+    <dt><b><b>Bipolar disorder</b></b><dt>
+    <dd>
+      A mental health condition characterized by extreme mood swings that
+      include emotional highs (mania or hypomania) and lows (depression).
+    </dd>
+
+    <dt><b><b>Botulism</b></b><dt>
+    <dd>
+      A rare but serious illness caused by toxins produced by Clostridium
+      botulinum bacteria. Symptoms include muscle weakness, double vision, and
+      difficulty speaking or swallowing.
+    </dd>
+
+    <dt><b>Bulimia nervosa</b></b><dt>
+    <dd>
+      An eating disorder characterized by recurrent episodes of binge eating
+      followed by purging behaviors such as vomiting or excessive exercise.
+    </dd>
+
+    <dt><b><b>Balanitis</b></b><dt>
+    <dd>
+      An inflammation of the glans penis (head of the penis) in males.
+      Symptoms include redness, swelling, and pain.
+    </dd>
+
+    <dt><b></b>Bell's palsy</b></b><dt>
+    <dd>
+      A condition characterized by sudden, temporary weakness or paralysis of
+      the muscles on one side of the face, often resulting in drooping.
+    </dd>
+
+    <dt><b>Benign prostatic hyperplasia (BPH)</b><dt>
+    <dd>
+      An enlargement of the prostate gland that can cause urinary symptoms
+      such as frequent or urgent need to urinate, weak urine stream, or
+      difficulty starting urination.
+    </dd>
+
+    <dt><b>Beriberi</b><dt>
+    <dd>
+      A nutritional deficiency disease caused by a lack of thiamine (vitamin
+      B1). Symptoms include weakness, fatigue, nerve damage, and heart
+      problems.
+    </dd>
+
+    <dt><b>Biliary colic</b><dt>
+    <dd>
+      Pain caused by gallstones obstructing the bile ducts. Symptoms include
+      severe abdominal pain, often after eating fatty foods.
+    </dd>
+
+    <dt><b>Blastomycosis</b><dt>
+    <dd>
+      A fungal infection caused by inhaling spores of the fungus Blastomyces
+      dermatitidis. Symptoms include fever, cough, and fatigue.
+    </dd>
+
+    <dt><b>Black fever (Visceral leishmaniasis)</b><dt>
+    <dd>
+      A parasitic disease transmitted by sandflies. Symptoms include prolonged
+      fever, weight loss, enlarged spleen and liver, and anemia.
+    </dd>
+
+    <dt><b>Babesiosis</b><dt>
+    <dd>
+      A tick-borne illness caused by parasites of the genus Babesia. Symptoms
+      include fever, chills, sweats, fatigue, and muscle aches.
+    </dd>
+
+    <dt><b>Beta thalassemia</b><dt>
+    <dd>
+      A genetic blood disorder characterized by reduced production of
+      hemoglobin, leading to anemia and related complications.
+    </dd>
+
+    <dt><b>Behcet's disease</b><dt>
+    <dd>
+      A rare autoimmune disorder characterized by inflammation of blood
+      vessels throughout the body. Symptoms include mouth sores, genital
+      sores, and eye inflammation.
+    </dd>
+
+    <dt><b>Barrett's esophagus</b><dt>
+    <dd>
+      A condition in which the lining of the esophagus is damaged by stomach
+      acid, often due to gastroesophageal reflux disease (GERD). It can
+      increase the risk of esophageal cancer.
+    </dd>
+
+    <dt><b>Bartter syndrome</b><dt>
+    <dd>
+      A group of rare kidney disorders characterized by abnormalities in
+      electrolyte balance, leading to symptoms such as dehydration, muscle
+      weakness, and growth delays in children.
+    </dd>
+
+    <dt><b>Blepharitis</b><dt>
+    <dd>
+      An inflammation of the eyelids, typically at the base of the eyelashes.
+      Symptoms include redness, itching, and flaking of the eyelids.
+    </dd>
+
+    <dt><b>Bronchiolitis</b><dt>
+    <dd>
+      An inflammation of the small airways in the lungs, usually caused by
+      viral infection. It is most common in infants and young children, and
+      symptoms include cough, wheezing, and difficulty breathing.
+    </dd>
+
+    <dt><b>Brugada syndrome</b><dt>
+    <dd>
+      A rare genetic heart rhythm disorder that can cause sudden,
+      life-threatening cardiac arrest. Symptoms may include fainting,
+      seizures, or sudden death.
+    </dd>
+
+    <dt><b>Babinski reflex</b><dt>
+    <dd>
+      A reflex in which the big toe extends and the other toes fan out when
+      the sole of the foot is stimulated. It is a sign of neurological
+      dysfunction when present in adults.
+    </dd>
+
+    <dt><b>Biliary atresia</b><dt>
+    <dd>
+      A rare liver disorder in infants in which the bile ducts inside and
+      outside the liver are scarred and blocked. It can lead to liver damage
+      and failure if not treated promptly.
+    </dd>
+  </dl>
+  <div class="donation-prompt-container">
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./Assets/cancer-ribbon.svg" id="cancer-ribboon-img" style="height: 200px; width: 240px" />
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-text">
+            <p>Your Gift Holds Great Power<br />- Donate today!</p>
+          </div>
+        </td>
+        <td>
+          <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's
+            changing<br /> medicine.
+        </td>
+        <td>
+          <button class="donate-button" onclick="openDonatePage()">Donate</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

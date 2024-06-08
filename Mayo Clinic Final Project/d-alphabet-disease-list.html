@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease List</title>
+  <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    </style>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+          background: linear-gradient(to right, #0074D9, #3D9970); /* Replace with actual color codes */
+          color: white;
+          padding: 20px;
+          text-align: center;
+      }
+
+      .navigation-menu {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      .navigation-menu li {
+          display: inline-block;
+          margin-right: 20px;
+      }
+
+      .title {
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      .subtitle {
+          font-size: 14px;
+      }
+
+      .alphabet-search {
+          margin-top: 20px;
+      }
+
+      .alphabet-search button {
+          background-color: #FFF;
+          border: none;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+          cursor: pointer;
+      }
+
+      input[type="search"] {
+          width: 100%;
+          padding: 10px;
+          margin-top: 10px;
+          border: none;
+          border-radius: 5px;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <h1>Diseases Starting with D</h1>
+    <dl>
+      <dt><b>Dengue Fever</b></dt>
+      <dd>
+        A mosquito-borne viral infection causing fever, headache, joint and
+        muscle pains, and a characteristic skin rash.
+      </dd>
+
+      <dt><b>Diabetes</b></dt>
+      <dd>
+        A metabolic disorder characterized by high blood sugar levels over a
+        prolonged period, leading to symptoms such as increased thirst, frequent
+        urination, and unexplained weight loss.
+      </dd>
+
+      <dt><b>Depression</b></dt>
+      <dd>
+        A mood disorder causing persistent feelings of sadness and loss of
+        interest in activities, along with various physical and cognitive
+        symptoms.
+      </dd>
+
+      <dt><b>Dementia</b></dt>
+      <dd>
+        A broad category of brain diseases that cause long-term and often
+        gradual decrease in the ability to think and remember, affecting daily
+        functioning.
+      </dd>
+
+      <dt><b>Dermatitis</b></dt>
+      <dd>
+        An inflammation of the skin, often resulting in itching, redness, and
+        swelling, with various possible causes including allergic reactions,
+        irritants, or genetic factors.
+      </dd>
+
+      <dt><b>Diphtheria</b></dt>
+      <dd>
+        An infectious disease caused by the bacterium Corynebacterium
+        diphtheriae, characterized by a sore throat, fever, and the formation of
+        a thick membrane in the throat and nose.
+      </dd>
+
+      <dt><b>Down Syndrome</b></dt>
+      <dd>
+        A genetic disorder caused by the presence of all or part of a third copy
+        of chromosome 21, leading to developmental delays, intellectual
+        disability, and distinctive physical features.
+      </dd>
+
+      <dt><b>Diverticulitis</b></dt>
+      <dd>
+        An inflammation or infection of small pouches called diverticula that
+        develop along the walls of the intestines, causing abdominal pain,
+        fever, and changes in bowel habits.
+      </dd>
+
+      <dt><b>Deep Vein Thrombosis (DVT)</b></dt>
+      <dd>
+        A blood clot that forms in a deep vein, usually in the legs, causing
+        swelling, pain, warmth, and redness in the affected area, with potential
+        for serious complications if the clot breaks loose and travels to the
+        lungs.
+      </dd>
+
+      <dt><b>Dyslexia</b></dt>
+      <dd>
+        A learning disorder characterized by difficulty reading, spelling, and
+        processing language, often despite normal intelligence and adequate
+        education.
+      </dd>
+
+      <dt><b>Drug Addiction</b></dt>
+      <dd>
+        A chronic relapsing disorder characterized by compulsive drug seeking,
+        use, and cravings despite harmful consequences, often accompanied by
+        physical dependence and withdrawal symptoms.
+      </dd>
+
+      <dt><b>Delirium</b></dt>
+      <dd>
+        An acute and fluctuating disturbance in attention, awareness, and
+        cognition, often occurring in the context of an underlying medical
+        condition or substance intoxication.
+      </dd>
+
+      <dt><b>Diverticulosis</b></dt>
+      <dd>
+        A condition characterized by the presence of diverticula, or small
+        bulges, in the walls of the digestive tract, usually without symptoms
+        but may cause abdominal pain, bloating, and changes in bowel habits.
+      </dd>
+
+      <dt><b>Dry Eye Syndrome</b></dt>
+      <dd>
+        A chronic condition characterized by insufficient production of tears or
+        poor quality of tears, leading to symptoms such as dryness, irritation,
+        and blurred vision.
+      </dd>
+
+      <dt><b>Dental Caries</b></dt>
+      <dd>
+        Also known as tooth decay or cavities, dental caries is a common
+        infectious disease characterized by demineralization of tooth enamel,
+        leading to the formation of cavities and potential tooth loss.
+      </dd>
+
+      <dt><b>Dysentery</b></dt>
+      <dd>
+        An infectious disease of the intestines, typically caused by bacteria,
+        parasites, or viruses, and characterized by severe diarrhea with blood
+        or mucus, abdominal pain, fever, and dehydration.
+      </dd>
+
+      <dt><b>Dystonia</b></dt>
+      <dd>
+        A movement disorder characterized by involuntary muscle contractions
+        that cause repetitive or twisting movements and abnormal postures,
+        affecting one or more parts of the body.
+      </dd>
+
+      <dt><b>Duchenne Muscular Dystrophy</b></dt>
+      <dd>
+        A genetic disorder characterized by progressive muscle degeneration and
+        weakness, typically starting in childhood and leading to difficulties in
+        walking, breathing, and heart function.
+      </dd>
+
+      <dt><b>Dehydration</b></dt>
+      <dd>
+        A condition resulting from excessive loss of body fluids, often caused
+        by insufficient intake of fluids, excessive sweating, vomiting, or
+        diarrhea, leading to symptoms such as thirst, dry mouth, fatigue, and
+        dizziness.
+      </dd>
+
+      <dt><b>Diabetic Retinopathy</b></dt>
+      <dd>
+        A complication of diabetes that affects the eyes, causing damage to the
+        blood vessels in the retina, leading to vision problems and potential
+        blindness if left untreated.
+      </dd>
+
+      <dt><b>Diabetic Neuropathy</b></dt>
+      <dd>
+        A type of nerve damage that occurs in people with diabetes, causing
+        symptoms such as pain, tingling, numbness, and weakness, usually in the
+        hands and feet.
+      </dd>
+
+      <dt><b>Dyspepsia</b></dt>
+      <dd>
+        Also known as indigestion, dyspepsia is a common digestive problem
+        characterized by discomfort or pain in the upper abdomen, often
+        accompanied by bloating, belching, and nausea.
+      </dd>
+
+      <dt><b>Dengue Hemorrhagic Fever (DHF)</b></dt>
+      <dd>
+        A severe form of dengue fever characterized by bleeding, low platelet
+        count, and plasma leakage, which can lead to shock, organ failure, and
+        death if not treated promptly.
+      </dd>
+
+      <dt><b>Dilated Cardiomyopathy</b></dt>
+      <dd>
+        A condition characterized by the enlargement and weakening of the heart
+        muscle, leading to decreased ability to pump blood effectively and
+        potential complications such as heart failure, arrhythmias, and sudden
+        cardiac death.
+      </dd>
+
+      <dt><b>Depressive Disorder</b></dt>
+      <dd>
+        A mental health disorder characterized by persistent feelings of
+        sadness, hopelessness, and loss of interest or pleasure in activities,
+        often accompanied by changes in sleep, appetite, energy level, and
+        concentration.
+      </dd>
+
+      <dt><b>Dysfunctional Uterine Bleeding (DUB)</b></dt>
+      <dd>
+        Abnormal uterine bleeding that occurs outside of normal menstruation
+        patterns, often due to hormonal imbalances, uterine fibroids, polyps, or
+        other underlying conditions, leading to unpredictable or excessive
+        bleeding.
+      </dd>
+
+      <dt><b>Dysthymia</b></dt>
+      <dd>
+        A chronic mood disorder characterized by long-term, low-grade depressive
+        symptoms that persist for at least two years, interfering with daily
+        functioning and overall quality of life.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

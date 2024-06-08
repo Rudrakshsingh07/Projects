@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseases Starting with O</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    /><script src="./script.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Replace with the actual font family */
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          #0074d9,
+          #3d9970
+        ); /* Replace with actual color codes */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .navigation-menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .alphabet-search {
+        margin-top: 20px;
+      }
+
+      .alphabet-search button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="NavLinks">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Home.html"><img id="logo" style="height: 55px; width: 65px" src="./Assets/mayo-clinic-logo.svg" /></a>
+            
+          </li>
+          <li>
+            <a href="./why-choose-mayo-clinic.html">
+              <h4>Care at Mayo Clinic</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./health-library.html">
+              <h4>Health Library</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./for-medical-peofessionals.html">
+              <h4>For Medical Professionals</h4>
+            </a>
+          </li>
+          <li>
+            <a href="./giving-to-mayo-clinic.html">
+              <h4>Giving to Mayo Clinic</h4>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="title">Diseases & Conditions</div>
+      <div class="subtitle">
+        Easy-to-understand answers about diseases and conditions
+      </div>
+      <div class="alphabet-search">
+        <table>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openADiseaseListPage()"
+              >
+                A
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openBDiseaseListPage()"
+              >
+                B
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openCDiseaseListPage()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openDDiseaseListPage()"
+              >
+                D
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openEDiseaseListPage()"
+              >
+                E
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openFDiseaseListPage()"
+              >
+                F
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openGDiseaseListPage()"
+              >
+                G
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openHDiseaseListPage()"
+              >
+                H
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openIDiseaseListPage()"
+              >
+                I
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openJDiseaseListPage()"
+              >
+                J
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openKDiseaseListPage()"
+              >
+                K
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openLDiseaseListPage()"
+              >
+                L
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openMDiseaseListPage()"
+              >
+                M
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openNDiseaseListPage()"
+              >
+                N
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openODiseaseListPage()"
+              >
+                O
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openPDiseaseListPage()"
+              >
+                P
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openQDiseaseListPage()"
+              >
+                Q
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openRDiseaseListPage()"
+              >
+                R
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openSDiseaseListPage()"
+              >
+                S
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openTDiseaseListPage()"
+              >
+                T
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openUDiseaseListPage()"
+              >
+                U
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openVDiseaseListPage()"
+              >
+                V
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openWDiseaseListPage()"
+              >
+                W
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openXDiseaseListPage()"
+              >
+                X
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openYDiseaseListPage()"
+              >
+                Y
+              </button>
+            </td>
+            <td>
+              <button
+                class="find-disease-alphabets"
+                onclick="openZDiseaseListPage()"
+              >
+                Z
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- Add other alphabet buttons here -->
+      </div>
+      <input type="search" placeholder="Search diseases and conditions" />
+    </div>
+    <br />
+
+    <center><h1>Diseases Starting with O</h1></center>
+    <dl class="disease-list">
+      <dt><b>Osteoarthritis</b></dt>
+      <dd>
+        A common joint disorder due to aging and wear and tear on a joint.
+      </dd>
+
+      <dt><b>Obesity</b></dt>
+      <dd>Excessive body fat that increases the risk of health problems.</dd>
+
+      <dt><b>Osteoporosis</b></dt>
+      <dd>
+        A condition characterized by weak and brittle bones, increasing the risk
+        of fractures.
+      </dd>
+
+      <dt><b>Ovarian Cancer</b></dt>
+      <dd>
+        Cancer that forms in tissues of the ovary. It is often undetected until
+        it has spread.
+      </dd>
+
+      <dt><b>Oral Thrush</b></dt>
+      <dd>
+        An infection caused by the Candida fungus, resulting in white lesions on
+        the tongue and inner cheeks.
+      </dd>
+
+      <dt><b>Obsessive-Compulsive Disorder (OCD)</b></dt>
+      <dd>
+        A mental health disorder characterized by obsessive thoughts and
+        compulsive behaviors.
+      </dd>
+
+      <dt><b>Obstructive Sleep Apnea</b></dt>
+      <dd>
+        A sleep disorder characterized by pauses in breathing during sleep due
+        to obstruction of the airway.
+      </dd>
+
+      <dt><b>Osteomyelitis</b></dt>
+      <dd>An infection of the bone usually caused by bacteria or fungi.</dd>
+
+      <dt><b>Organic Brain Syndrome</b></dt>
+      <dd>
+        A general term for physical disorders impairing brain function, leading
+        to cognitive and behavioral symptoms.
+      </dd>
+
+      <dt><b>Onychomycosis</b></dt>
+      <dd>
+        A fungal infection of the nails, causing them to become thickened,
+        discolored, and brittle.
+      </dd>
+
+      <dt><b>Ovarian Cyst</b></dt>
+      <dd>
+        A fluid-filled sac that forms on the ovary. It is usually harmless but
+        can sometimes cause pain or complications.
+      </dd>
+
+      <dt><b>Otitis Media</b></dt>
+      <dd>
+        An infection or inflammation of the middle ear, often causing pain and
+        fluid buildup.
+      </dd>
+
+      <dt><b>Ocular Hypertension</b></dt>
+      <dd>
+        Higher than normal pressure inside the eye, which can lead to glaucoma
+        if left untreated.
+      </dd>
+
+      <dt><b>Oral Cancer</b></dt>
+      <dd>
+        Cancer that develops in the tissues of the mouth or throat, often
+        associated with tobacco and alcohol use.
+      </dd>
+
+      <dt><b>Omphalitis</b></dt>
+      <dd>
+        An infection of the umbilical stump in newborns, usually caused by
+        bacteria.
+      </dd>
+
+      <dt><b>Oppositional Defiant Disorder (ODD)</b></dt>
+      <dd>
+        A childhood behavioral disorder characterized by defiance, hostility,
+        and disobedience towards authority figures.
+      </dd>
+
+      <dt><b>Orthostatic Hypotension</b></dt>
+      <dd>
+        A sudden drop in blood pressure when standing up, leading to dizziness
+        or fainting.
+      </dd>
+
+      <dt><b>Osteogenesis Imperfecta</b></dt>
+      <dd>
+        Also known as brittle bone disease, a genetic disorder characterized by
+        fragile bones that break easily.
+      </dd>
+
+      <dt><b>Overactive Bladder</b></dt>
+      <dd>
+        A condition characterized by frequent and sudden urges to urinate.
+      </dd>
+
+      <dt><b>Orchitis</b></dt>
+      <dd>
+        Inflammation of one or both testicles, often caused by a viral or
+        bacterial infection.
+      </dd>
+
+      <dt><b>Osler-Weber-Rendu Disease (Hereditary Hemorrhagic Telangiectasia)</b></dt>
+      <dd>
+        A genetic disorder characterized by abnormal blood vessel formation,
+        leading to recurrent nosebleeds and other symptoms.
+      </dd>
+
+      <dt><b>Occupational Asthma</b></dt>
+      <dd>
+        A type of asthma triggered by exposure to workplace irritants or
+        allergens.
+      </dd>
+
+      <dt><b>Olfactory Reference Syndrome</b></dt>
+      <dd>
+        A psychiatric disorder characterized by an irrational belief that one
+        emits a foul odor, despite evidence to the contrary.
+      </dd>
+
+      <dt><b>Ornithosis</b></dt>
+      <dd>
+        An infectious disease caused by the bacterium Chlamydia psittaci,
+        transmitted to humans from birds, especially parrots.
+      </dd>
+
+      <dt><b>Oculopharyngeal Muscular Dystrophy</b></dt>
+      <dd>
+        A genetic disorder characterized by weakness and wasting of certain
+        muscles, particularly in the eyes and throat.
+      </dd>
+
+      <dt><b>Osgood-Schlatter Disease</b></dt>
+      <dd>
+        A condition causing pain and swelling below the knee in adolescents,
+        particularly those who are physically active.
+      </dd>
+
+      <dt><b>Ovarian Torsion</b></dt>
+      <dd>
+        A medical emergency where the ovary twists on its supporting tissues,
+        cutting off its blood supply.
+      </dd>
+
+      <dt><b>Orbital Cellulitis</b></dt>
+      <dd>
+        An infection of the tissues surrounding the eye, often caused by
+        bacteria spreading from nearby structures.
+      </dd>
+
+      <dt><b>Occipital Neuralgia</b></dt>
+      <dd>
+        A condition characterized by chronic pain in the back of the head and
+        neck, often radiating to the eyes and forehead.
+      </dd>
+    </dl>
+    <div class="donation-prompt-container">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img
+                src="./Assets/cancer-ribbon.svg"
+                id="cancer-ribboon-img"
+                style="height: 200px; width: 240px"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-text">
+              <p>Your Gift Holds Great Power<br />- Donate today!</p>
+            </div>
+          </td>
+          <td>
+            <div class="donation-prompt-subtext">
+            Make your tax-deductible gift and be a part of the<br /> cutting-edge research and care that's changing<br /> medicine.
+          </td>
+          <td>
+            <button class="donate-button" onclick="openDonatePage()">Donate</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

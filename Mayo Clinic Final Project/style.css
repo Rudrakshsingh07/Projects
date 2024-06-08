@@ -1,0 +1,465 @@
+nav {
+  color: #fff; /* Sets the text color of the navigation */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Displays as flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 104px; /* Sets the height of the navigation */
+}
+
+nav ul {
+  list-style-type: none; /* Removes bullet points from the list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Displays as flexbox */
+  justify-content: center; /* Centers content horizontally */
+}
+
+nav li {
+  margin-right: 1rem; /* Adds right margin between list items */
+  padding: 30px; /* Adds padding inside list items */
+}
+
+a {
+  color: black; /* Sets the default text color for links */
+  text-decoration: none; /* Removes underline from links */
+  transition: background-color 0.3s ease; /* Adds transition effect on background color change */
+}
+
+a:hover {
+  color: #137ade; /* Changes text color on hover */
+  transition: background-color 0.3s ease; /* Adds transition effect on background color change */
+}
+
+.logo {
+  height: 55px; /* Sets the height of the logo */
+  width: 65px; /* Sets the width of the logo */
+}
+
+.NavLinks {
+  height: 104px; /* Sets the height of the navigation links */
+}
+
+body {
+  margin: 0; /* Removes default margin */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.video-container {
+  position: relative; /* Sets the position relative for absolute positioning of child elements */
+  width: 100%; /* Sets the width of the video container */
+  height: 630px; /* Sets the height of the video container */
+  overflow: hidden; /* Hides overflowing content */
+}
+
+.video-container video {
+  position: absolute; /* Positions the video absolutely */
+  top: 0; /* Sets the top position of the video */
+  left: 0; /* Sets the left position of the video */
+  width: 100%; /* Sets the width of the video */
+  height: auto; /* Sets the height of the video automatically */
+  z-index: -1; /* Sets the z-index of the video to be behind other content */
+}
+
+.content h1 {
+  font-size: 50px; /* Sets the font size of the heading */
+  color: #fff; /* Sets the text color of the heading */
+  font-weight: 700; /* Sets the font weight of the heading */
+  text-align: left; /* Aligns the heading to the left */
+  margin-left: 350px; /* Adds left margin to the heading */
+  margin-top: 450px; /* Adds top margin to the heading */
+}
+
+.appointment-request-button {
+  position: absolute; /* Positions the button absolutely */
+  bottom: 56px; /* Sets the bottom position of the button */
+  left: 405px; /* Sets the left position of the button */
+  padding: 10px 20px; /* Adds padding to the button */
+  border: 2px solid rgb(255, 255, 255); /* Sets the border of the button */
+  border-radius: 20px; /* Sets the border radius of the button */
+  background-color: transparent; /* Sets the background color of the button to transparent */
+  color: rgb(255, 255, 255); /* Sets the text color of the button */
+  cursor: pointer; /* Sets the cursor style to pointer */
+  font-size: 18px; /* Sets the font size of the button */
+}
+
+.appointment-request-button :hover {
+  color: #fff; /* Changes text color on hover */
+}
+
+.find-disease-by-letter {
+  margin-left: 305px; /* Adds left margin to the element */
+  margin-top: 100px; /* Adds top margin to the element */
+  height: 360px; /* Sets the height of the element */
+  position: absolute; /* Positions the element absolutely */
+  left: 360px; /* Sets the left position of the element */
+}
+
+.find-disease-alphabets {
+  border-radius: 50%; /* Sets the border radius to make the element round */
+  background-color: transparent; /* Sets the background color of the element to transparent */
+  border-color: #137ade; /* Sets the border color of the element */
+  text-emphasis-color: #137ade; /* Sets the text emphasis color of the element */
+}
+
+.search-disease-name-input {
+  border-radius: 20px; /* Sets the border radius of the input */
+  padding: 10px 20px; /* Adds padding to the input */
+  background-color: transparent; /* Sets the background color of the input to transparent */
+  cursor: text; /* Sets the cursor style to text */
+  text-decoration: black; /* Sets the text decoration of the input */
+}
+
+#search-container {
+  display: grid; /* Displays the container as a grid */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Sets the number and width of columns in the grid */
+  grid-gap: 20px; /* Sets the gap between grid items */
+}
+
+#find-disease-by-name,
+#find-disease-by-letter {
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  padding: 20px; /* Adds padding to the element */
+  color: #000000; /* Sets the text color of the element */
+}
+
+#find-disease-by-name {
+  background-color: #ffffff; /* Sets the background color of the element */
+  order: 2; /* Sets the order of the element in a flex container */
+}
+
+#find-disease-by-letter {
+  background-color: #ffffff; /* Sets the background color of the element */
+  order: 1; /* Sets the order of the element in a flex container */
+}
+
+#find-disease-by-letter {
+  background-color: #ffffff; /* Sets the background color of the element */
+  order: 1; /* Sets the order of the element in a flex container */
+  padding: 20px; /* Adds padding to the element */
+  display: flex; /* Displays the element as flexbox */
+  flex-wrap: wrap; /* Allows the element to wrap its children */
+}
+
+.find-disease-alphabets {
+  width: 45px; /* Sets the width of the element */
+  height: 45px; /* Sets the height of the element */
+  border-radius: 50%; /* Sets the border radius to make the element round */
+  border: 2px solid #137ade; /* Sets the border of the element */
+  background-color: transparent; /* Sets the background color of the element to transparent */
+  color: #137ade; /* Sets the text color of the element */
+  font-size: 18px; /* Sets the font size of the element */
+  margin: 5px; /* Sets the margin of the element */
+  display: flex; /* Displays the element as flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Aligns text to the center */
+  cursor: pointer; /* Sets the cursor style to pointer */
+  transition: background-color;
+}
+.search-disease-name-input {
+  border-radius: 20px; /* Sets the border radius of the input */
+  padding: 10px 20px; /* Adds padding to the input */
+  background-color: transparent; /* Sets the background color of the input to transparent */
+  cursor: text; /* Sets the cursor style to text */
+  text-decoration: black; /* Sets the text decoration of the input */
+}
+
+#search-container {
+  display: grid; /* Displays the container as a grid */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Sets the number and width of columns in the grid */
+  grid-gap: 20px; /* Sets the gap between grid items */
+}
+
+#find-disease-by-name,
+#find-disease-by-letter {
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  padding: 20px; /* Adds padding to the element */
+  color: #000000; /* Sets the text color of the element */
+}
+
+#find-disease-by-name {
+  background-color: #ffffff; /* Sets the background color of the element */
+  order: 2; /* Sets the order of the element in a flex container */
+}
+
+#find-disease-by-letter {
+  background-color: #ffffff; /* Sets the background color of the element */
+  order: 1; /* Sets the order of the element in a flex container */
+  padding: 20px; /* Adds padding to the element */
+  display: flex; /* Displays the element as flexbox */
+  flex-wrap: wrap; /* Allows the element to wrap its children */
+}
+
+.find-disease-alphabets {
+  width: 45px; /* Sets the width of the element */
+  height: 45px; /* Sets the height of the element */
+  border-radius: 50%; /* Sets the border radius to make the element round */
+  border: 2px solid #137ade; /* Sets the border of the element */
+  background-color: transparent; /* Sets the background color of the element to transparent */
+  color: #137ade; /* Sets the text color of the element */
+  font-size: 18px; /* Sets the font size of the element */
+  margin: 5px; /* Sets the margin of the element */
+  display: flex; /* Displays the element as flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Aligns text to the center */
+  cursor: pointer; /* Sets the cursor style to pointer */
+  transition: background-color 0.3s, color 0.3s; /* Adds transition effect */
+}
+
+.find-disease-alphabets:hover {
+  background-color: #137ade; /* Changes background color on hover */
+  color: #fff; /* Changes text color on hover */
+}
+
+.search-disease-name-input {
+  border-radius: 20px; /* Sets the border radius of the input */
+  padding: 10px 20px; /* Adds padding to the input */
+  background-color: transparent; /* Sets the background color of the input to transparent */
+  cursor: text; /* Sets the cursor style to text */
+  text-decoration: black; /* Sets the text decoration of the input */
+  font-size: 18px; /* Sets the font size of the input */
+  width: 635px; /* Sets the width of the input */
+}
+
+.divider-line {
+  width: 1296px; /* Sets the width of the divider line */
+  height: 1px; /* Sets the height of the divider line */
+}
+
+.healing-starts-here-container {
+  position: relative; /* Sets the position of the container to relative */
+  width: calc(100% - 291px - 105px); /* Sets the width of the container */
+  margin-left: 291px; /* Sets the left margin of the container */
+  margin-right: 105px; /* Sets the right margin of the container */
+  background-color: white; /* Sets the background color of the container */
+}
+
+.healing-starts-here-text {
+  padding: 20px; /* Adds padding to the text */
+  line-height: 17 px; /* Sets the line height of the text */
+  font-size: 21px; /* Sets the font size of the text */
+}
+
+.healing-starts-here-image {
+  position: absolute; /* Sets the position of the image to absolute */
+  right: 105px; /* Sets the right position of the image */
+  top: 0; /* Sets the top position of the image */
+  border-radius: 20px; /* Sets the border radius of the image */
+}
+.healing-starts-here-button {
+  position: absolute; /* Positions the button absolutely */
+  font-size: 18px; /* Sets the font size of the button */
+  border-radius: 20px; /* Sets the border radius of the button */
+  border-color: #137ade; /* Sets the border color of the button */
+  color: #137ade; /* Sets the text color of the button */
+  padding: 12px 30px; /* Adds padding to the button */
+  left: 291px; /* Sets the left position of the button */
+  background-color: transparent; /* Sets the background color of the button to transparent */
+  cursor: pointer; /* Sets the cursor style to pointer */
+}
+
+.container {
+  position: relative; /* Sets the position of the container to relative */
+  width: calc(100% - 500px); /* Sets the width of the container */
+  max-width: 1075px; /* Sets the maximum width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds padding to the container */
+  background-color: #ffffff; /* Sets the background color of the container */
+}
+
+.text-container {
+  position: absolute; /* Sets the position of the text container to absolute */
+  left: 700px; /* Sets the left position of the text container */
+  top: 400px; /* Sets the top position of the text container */
+  transform: translateY(
+    -50%
+  ); /* Moves the text container up by 50% of its own height */
+  padding-right: 105px; /* Adds right padding to the text container */
+}
+
+.text-container h2 {
+  margin-top: 0; /* Removes top margin of the heading */
+  font-size: 50px; /* Sets the font size of the heading */
+}
+
+.text-container p {
+  font-size: 20px; /* Sets the font size of the paragraphs */
+  margin-top: 10px; /* Sets the top margin of the paragraphs */
+  margin-bottom: 20px; /* Sets the bottom margin of the paragraphs */
+}
+
+.image-container {
+  position: absolute; /* Sets the position of the image container to absolute */
+  top: 50%; /* Sets the top position of the image container */
+  right: 0; /* Sets the right position of the image container */
+  transform: translateY(
+    -50%
+  ); /* Moves the image container up by 50% of its own height */
+}
+
+.image-container img {
+  position: absolute; /* Sets the position of the image to absolute */
+  border-radius: 10px; /* Sets the border radius of the image */
+  width: 530px; /* Sets the width of the image */
+  height: 700px; /* Sets the height of the image */
+  display: block; /* Displays the image as a block element */
+  margin-left: auto; /* Aligns the image to the left */
+  bottom: -680px; /* Sets the bottom position of the image */
+  right: 600px; /* Sets the right position of the image */
+}
+
+.world-class-care-button {
+  padding: 10px 20px; /* Adds padding to the button */
+  border: 2px solid #134ade; /* Sets the border of the button */
+  border-radius: 20px; /* Sets the border radius of the button */
+  background-color: transparent; /* Sets the background color of the button to transparent */
+  color: #134ade; /* Sets the text color of the button */
+  cursor: pointer; /* Sets the cursor style to pointer */
+  font-size: 18px; /* Sets the font size of the button */
+  width: 305px; /* Sets the width of the button */
+}
+
+.container {
+  display: flex; /* Displays the container as flexbox */
+  justify-content: space-between; /* Aligns items in the container with space between */
+  padding-left: 0 360px; /* Adds left padding to the container */
+}
+#find-disease-by-letter {
+  width: auto; /* Sets the width of the element to automatic */
+}
+
+#search-container {
+  width: auto; /* Sets the width of the element to automatic */
+}
+
+.location-container {
+  display: grid; /* Displays the container as a grid */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Sets the number and width of columns in the grid */
+  grid-template-rows: repeat(
+    2,
+    auto
+  ); /* Sets the number and height of rows in the grid */
+  gap: 20px; /* Sets the gap between grid items */
+}
+
+.grid-item {
+  background-color: #ddd; /* Sets the background color of grid items */
+  padding: 20px; /* Adds padding inside grid items */
+  text-align: center; /* Centers content horizontally within grid items */
+}
+
+.map-element {
+  width: 100%; /* Sets the width of the map element to 100% */
+}
+
+.map-element p {
+  font-size: 40px; /* Sets the font size of paragraphs within the map element */
+}
+
+.donation-prompt-container {
+  display: flex; /* Displays the container as flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 227px; /* Sets the height of the container */
+  background-color: #0d0d33; /* Sets the background color of the container */
+  color: white; /* Sets the text color of the container */
+  font-size: 20px; /* Sets the font size of text within the container */
+  font-weight: bold; /* Sets the font weight of text within the container */
+  width: 100%; /* Sets the width of the container to 100% */
+  padding: 20px; /* Adds padding to the container for spacing */
+  height: 267px; /* Sets the hight of the container to 267px */
+}
+
+.donation-prompt-text p {
+  font-size: 40px; /* Sets the font size of paragraphs within the container */
+  color: #fff; /* Sets the text color of paragraphs within the container */
+}
+
+.donation-prompt-subtext {
+  font-size: 19px; /* Sets the font size of the subtext */
+  color: #fff; /* Sets the text color of the subtext */
+}
+
+.donation-prompt-container table {
+  border-collapse: separate; /* Separates border spacing from neighboring cells */
+  border-spacing: 10px; /* Sets the space between cells */
+}
+
+.donation-prompt-container td {
+  border: 1px solid transparent; /* Sets the border of cells to transparent */
+  padding: 10px; /* Adds padding to cells */
+}
+.donate-button {
+  border: 2px solid #1371d5; /* Sets the border of the button */
+  border-radius: 20px; /* Sets the border radius of the button */
+  background-color: #1371d5; /* Sets the background color of the button */
+  color: rgb(255, 255, 255); /* Sets the text color of the button */
+  cursor: pointer; /* Sets the cursor style to pointer */
+  width: 200px; /* Sets the width of the button */
+  height: 46px; /* Sets the height of the button */
+  font-size: 20px; /* Sets the font size of the button */
+}
+
+.PCC {
+  font-size: 18px; /* Sets the font size of elements with class PCC */
+  width: 100%; /* Sets the width of elements with class PCC to 100% */
+  padding-left: 350px; /* Adds left padding to elements with class PCC */
+  padding-right: 350px; /* Adds right padding to elements with class PCC */
+}
+
+.PCC p {
+  font-size: 25px; /* Sets the font size of paragraphs within elements with class PCC */
+}
+
+.PCC b {
+  font-size: 45px; /* Sets the font size of bold text within elements with class PCC */
+}
+
+.rhsimg {
+  width: 500px; /* Sets the width of elements with class rhsimg */
+  height: 745px; /* Sets the height of elements with class rhsimg */
+  border-radius: 20px; /* Sets the border radius of elements with class rhsimg */
+  position: absolute; /* Sets the position of elements with class rhsimg to absolute */
+  right: 250px; /* Sets the right position of elements with class rhsimg */
+  top: 100px; /* Sets the top position of elements with class rhsimg */
+}
+
+.lhsimg p {
+  position: absolute; /* Sets the position of paragraphs within elements with class lhsimg to absolute */
+  left: 700px; /* Sets the left position of paragraphs within elements with class lhsimg */
+  top: 450px; /* Sets the top position of paragraphs within elements with class lhsimg */
+  transform: translateY(
+    -50%
+  ); /* Moves paragraphs within elements with class lhsimg up by 50% of their own height */
+  padding-right: 105px; /* Adds right padding to paragraphs within elements with class lhsimg */
+  font-size: 25px; /* Sets the font size of paragraphs within elements with class lhsimg */
+}
+
+.lhsimg h2 {
+  position: absolute; /* Sets the position of headings within elements with class lhsimg to absolute */
+  left: 700px; /* Sets the left position of headings within elements with class lhsimg */
+  top: 250px; /* Sets the top position of headings within elements with class lhsimg */
+  transform: translateY(
+    -50%
+  ); /* Moves headings within elements with class lhsimg up by 50% of their own height */
+  padding-right: 105px; /* Adds right padding to headings within elements with class lhsimg */
+  font-size: 40px; /* Sets the font size of headings within elements with class lhsimg */
+}
+
+.mo-quote {
+  font-size: 55px; /* Sets the font size of elements with class mo-quote */
+  position: absolute; /* Sets the position of elements with class mo-quote to absolute */
+  bottom: 0; /* Sets the bottom position of elements with class mo-quote */
+}
